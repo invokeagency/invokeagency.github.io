@@ -12,7 +12,7 @@
         <!-- Frederik Gram -->
         <div class="bg-invoke-bg/80 p-6 rounded-xl border border-invoke-border space-y-4 hover:shadow-lg transition-all duration-200">
           <div class="aspect-square rounded-lg bg-gradient-to-br from-invoke-accent/10 to-invoke-text/10 flex items-center justify-center overflow-hidden">
-            <img src="https://media.licdn.com/dms/image/D4E03AQHFsE_V-kG-Yw/profile-displayphoto-shrink_800_800/0/1705094827615?e=1748476800&v=beta&t=Ue5nFWKbLYjWxPgXGHPh-RlC_nLGYLqVEEXU-1L_1Ow" alt="Frederik Gram" class="w-full h-full object-cover" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Jacques-Louis_David_-_Portrait_of_Napoleon_Bonaparte_-_WGA06092.jpg'" />
+            <img :src="imageUrl" :alt="name" class="w-full h-full object-cover" @error="handleImageError" />
           </div>
           <div class="space-y-2">
             <h3 class="text-xl font-semibold text-invoke-text">Frederik Gram</h3>
@@ -32,7 +32,7 @@
         <!-- Iren Glass -->
         <div class="bg-invoke-bg/80 p-6 rounded-xl border border-invoke-border space-y-4 hover:shadow-lg transition-all duration-200">
           <div class="aspect-square rounded-lg bg-gradient-to-br from-invoke-accent/10 to-invoke-text/10 flex items-center justify-center overflow-hidden">
-            <img src="https://media.licdn.com/dms/image/D4D03AQEclIqLbkcXJw/profile-displayphoto-shrink_800_800/0/1735538686547?e=1748476800&v=beta&t=1oY5MQfOOxxcz718wxH0Ct7ANbJU7OKRk7ggGHeBJKY" alt="Iren Glass" class="w-full h-full object-cover" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Jacques-Louis_David_-_Portrait_of_Napoleon_Bonaparte_-_WGA06092.jpg'" />
+            <img :src="imageUrl" :alt="name" class="w-full h-full object-cover" @error="handleImageError" />
           </div>
           <div class="space-y-2">
             <h3 class="text-xl font-semibold text-invoke-text">Iren Glass</h3>
@@ -52,7 +52,7 @@
         <!-- Luka Tutberidze -->
         <div class="bg-invoke-bg/80 p-6 rounded-xl border border-invoke-border space-y-4 hover:shadow-lg transition-all duration-200">
           <div class="aspect-square rounded-lg bg-gradient-to-br from-invoke-accent/10 to-invoke-text/10 flex items-center justify-center overflow-hidden">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEclIqLbkcXJw/profile-displayphoto-shrink_800_800/B4DZQWKrfbHUAc-/0/1735538686547?e=1748476800&v=beta&t=1oY5MQfOOxxcz718wxH0Ct7ANbJU7OKRk7ggGHeBJKY" alt="Luka Tutberidze" class="w-full h-full object-cover" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Jacques-Louis_David_-_Portrait_of_Napoleon_Bonaparte_-_WGA06092.jpg'" />
+            <img :src="imageUrl" :alt="name" class="w-full h-full object-cover" @error="handleImageError" />
           </div>
           <div class="space-y-2">
             <h3 class="text-xl font-semibold text-invoke-text">Luka Tutberidze</h3>
@@ -72,7 +72,7 @@
         <!-- Lasse Usbeck -->
         <div class="bg-invoke-bg/80 p-6 rounded-xl border border-invoke-border space-y-4 hover:shadow-lg transition-all duration-200">
           <div class="aspect-square rounded-lg bg-gradient-to-br from-invoke-accent/10 to-invoke-text/10 flex items-center justify-center overflow-hidden">
-            <img src="https://media.licdn.com/dms/image/D5603AQF8YvdXwQRkYA/profile-displayphoto-shrink_800_800/0/1705094827615?e=1748476800&v=beta&t=Ue5nFWKbLYjWxPgXGHPh-RlC_nLGYLqVEEXU-1L_1Ow" alt="Lasse Usbeck" class="w-full h-full object-cover" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Jacques-Louis_David_-_Portrait_of_Napoleon_Bonaparte_-_WGA06092.jpg'" />
+            <img :src="imageUrl" :alt="name" class="w-full h-full object-cover" @error="handleImageError" />
           </div>
           <div class="space-y-2">
             <h3 class="text-xl font-semibold text-invoke-text">Lasse Usbeck</h3>
@@ -92,7 +92,7 @@
         <!-- Anton Kopylow -->
         <div class="bg-invoke-bg/80 p-6 rounded-xl border border-invoke-border space-y-4 hover:shadow-lg transition-all duration-200">
           <div class="aspect-square rounded-lg bg-gradient-to-br from-invoke-accent/10 to-invoke-text/10 flex items-center justify-center overflow-hidden">
-            <img src="https://media.licdn.com/dms/image/D4E03AQHFsE_V-kG-Yw/profile-displayphoto-shrink_800_800/0/1705094827615?e=1748476800&v=beta&t=Ue5nFWKbLYjWxPgXGHPh-RlC_nLGYLqVEEXU-1L_1Ow" alt="Anton Kopylow" class="w-full h-full object-cover" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Jacques-Louis_David_-_Portrait_of_Napoleon_Bonaparte_-_WGA06092.jpg'" />
+            <img :src="imageUrl" :alt="name" class="w-full h-full object-cover" @error="handleImageError" />
           </div>
           <div class="space-y-2">
             <h3 class="text-xl font-semibold text-invoke-text">Anton Kopylow</h3>
@@ -129,6 +129,16 @@
 
 <script>
 export default {
-  name: 'Team'
+  name: 'Team',
+  methods: {
+    handleImageError(e) {
+      e.target.insertAdjacentHTML('afterend', `
+        <svg class="w-24 h-24 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+      `);
+      e.target.remove();
+    }
+  }
 }
 </script> 
