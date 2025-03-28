@@ -72,7 +72,7 @@ export default {
         'ml-analytics': ['predictive-analytics', 'data-viz']
       }
       const storyId = storyIds[folderId][fileIndex]
-      this.$router.push(`/stories/${storyId}`)
+      this.$router.push(`/story/${storyId}`)
     }
   }
 }
