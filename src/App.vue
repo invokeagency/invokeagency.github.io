@@ -1,30 +1,28 @@
 <template>
   <div class="min-h-screen bg-invoke-bg text-invoke-text">
-    <!-- Logo in fixed position -->
-    <div class="fixed top-0 left-0 p-6 z-50">
-      <router-link to="/" class="text-2xl font-bold hover:text-invoke-accent transition-colors">
-        INVK<span class="animate-pulse">_</span>
-      </router-link>
-    </div>
-
     <!-- Navigation -->
-    <nav class="fixed top-0 right-0 p-6 z-50">
-      <div class="flex items-center space-x-6">
-        <router-link to="/" class="text-sm hover:text-invoke-accent transition-colors">
-          Home
+    <nav class="fixed top-0 left-0 right-0 py-3 px-6 z-50 bg-invoke-bg/80 backdrop-blur-sm border-b border-invoke-border/10">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <router-link to="/" class="text-2xl font-bold hover:text-invoke-accent transition-colors">
+          INVK<span class="animate-pulse">_</span>
         </router-link>
-        <router-link to="/stories" class="text-sm hover:text-invoke-accent transition-colors">
-          Stories
-        </router-link>
-        <router-link to="/team" class="text-sm hover:text-invoke-accent transition-colors">
-          Team
-        </router-link>
-        <router-link to="/about" class="text-sm hover:text-invoke-accent transition-colors">
-          About
-        </router-link>
-        <router-link to="/contact" class="text-sm px-4 py-2 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-colors">
-          Contact
-        </router-link>
+        <div class="flex items-center space-x-6">
+          <router-link to="/" class="text-sm hover:text-invoke-accent transition-colors">
+            Home
+          </router-link>
+          <router-link to="/stories" class="text-sm hover:text-invoke-accent transition-colors">
+            Stories
+          </router-link>
+          <router-link to="/team" class="text-sm hover:text-invoke-accent transition-colors">
+            Team
+          </router-link>
+          <router-link to="/about" class="text-sm hover:text-invoke-accent transition-colors">
+            About
+          </router-link>
+          <router-link to="/contact" class="text-sm px-4 py-2 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-colors">
+            Contact
+          </router-link>
+        </div>
       </div>
     </nav>
 

@@ -24,6 +24,10 @@
             {{ file }}
             <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-invoke-bg group-hover/item:w-full transition-all duration-200"></span>
           </span>
+          <!-- Tooltip -->
+          <span class="absolute right-0 translate-x-2 ml-2 px-2 py-1 bg-invoke-bg/90 text-invoke-text text-xs rounded opacity-0 group-hover/item:opacity-100 transition-opacity duration-200 whitespace-nowrap shadow-lg">
+            Click to view story
+          </span>
         </li>
       </ul>
     </div>
@@ -37,19 +41,24 @@ export default {
     return {
       folders: [
         {
-          id: 'predictive-analytics',
-          name: 'Predictive Analytics',
-          files: ['Sales Forecasting Tool', 'Risk Scoring System']
+          id: 'integrations',
+          name: 'Integrations & Automation',
+          files: ['Telegram Chatbot', 'API Gateway']
         },
         {
-          id: 'ai-platform',
-          name: 'AI Platform',
-          files: ['LLM Integration SDK', 'Chatbot Analytics Dashboard']
+          id: 'mobile-apps',
+          name: 'Mobile Apps',
+          files: ['Cross-platform MVPs', 'Fitness Tracking App']
         },
         {
-          id: 'mobile-app',
-          name: 'Mobile App',
-          files: ['Cross-platform MVPs', 'Embedded AI modules']
+          id: 'saas',
+          name: 'SaaS Solutions',
+          files: ['LLM Integration SDK', 'Sales Forecasting']
+        },
+        {
+          id: 'ml-analytics',
+          name: 'ML & Analytics',
+          files: ['Predictive Analytics', 'Data Visualization']
         }
       ]
     }
@@ -57,9 +66,10 @@ export default {
   methods: {
     navigateToStory(folderId, fileIndex) {
       const storyIds = {
-        'predictive-analytics': ['sales-forecasting', 'risk-scoring'],
-        'ai-platform': ['llm-integration', 'chatbot-analytics'],
-        'mobile-app': ['cross-platform-mvp', 'embedded-ai']
+        'integrations': ['telegram-chatbot', 'api-gateway'],
+        'mobile-apps': ['cross-platform-mvp', 'fitness-tracking'],
+        'saas': ['llm-integration', 'sales-forecasting'],
+        'ml-analytics': ['predictive-analytics', 'data-viz']
       }
       const storyId = storyIds[folderId][fileIndex]
       this.$router.push(`/stories/${storyId}`)

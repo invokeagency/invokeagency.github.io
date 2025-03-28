@@ -73,51 +73,135 @@ export default {
   data() {
     return {
       stories: {
-        'sales-forecasting': {
-          title: 'Sales Forecasting Tool',
-          summary: 'Built an AI-powered sales forecasting system that increased prediction accuracy by 47%',
-          image: '/images/stories/sales-forecasting.jpg',
-          tags: ['AI', 'Data Science', 'Enterprise'],
+        // Integrations & Automation
+        'telegram-chatbot': {
+          title: 'Telegram Chatbot',
+          summary: 'Built a versatile Telegram bot that automates customer support and engagement',
+          image: '/images/stories/telegram-bot.jpg',
+          tags: ['Telegram', 'Automation', 'Customer Support'],
           fullStory: {
-            challenge: 'A retail chain was struggling with inventory management due to inaccurate sales predictions. Their legacy forecasting system was causing overstocking in some locations and stockouts in others.',
-            solution: 'We developed a machine learning model that analyzes historical sales data, seasonal trends, and external factors. The system integrates with their existing ERP and updates predictions in real-time.',
+            challenge: 'A client needed an automated way to handle customer inquiries and provide instant responses 24/7. Manual support was becoming unsustainable as their user base grew.',
+            solution: 'We developed a Telegram bot that handles common customer queries, provides automated responses, and escalates complex issues to human support when needed.',
+            results: [
+              '90% reduction in support response time',
+              '24/7 automated customer service',
+              'Handles 1000+ daily interactions',
+              'Seamless integration with existing systems'
+            ]
+          }
+        },
+        'api-gateway': {
+          title: 'API Gateway',
+          summary: 'Developed a robust API gateway for microservices architecture',
+          image: '/images/stories/api-gateway.jpg',
+          tags: ['API', 'Microservices', 'Architecture'],
+          fullStory: {
+            challenge: 'A client needed to manage multiple microservices with different authentication methods and rate limiting requirements.',
+            solution: 'We built a centralized API gateway that handles authentication, rate limiting, and request routing across all microservices.',
+            results: [
+              'Unified authentication system',
+              'Improved security and monitoring',
+              'Reduced latency by 40%',
+              'Simplified service management'
+            ]
+          }
+        },
+        // Mobile Apps
+        'cross-platform-mvp': {
+          title: 'Cross-platform MVP',
+          summary: 'Launched a cross-platform mobile app in record time',
+          image: '/images/stories/mobile-mvp.jpg',
+          tags: ['Flutter', 'Mobile', 'MVP'],
+          fullStory: {
+            challenge: 'A startup needed to quickly validate their product idea with a cross-platform mobile app while maintaining high performance.',
+            solution: 'We developed a Flutter-based MVP that delivered native performance across iOS and Android with a single codebase.',
+            results: [
+              '2-week development cycle',
+              'Native performance on both platforms',
+              'Reduced maintenance costs',
+              'Faster time to market'
+            ]
+          }
+        },
+        'fitness-tracking': {
+          title: 'Fitness Tracking App',
+          summary: 'Created a fitness tracking app with real-time analytics',
+          image: '/images/stories/fitness-app.jpg',
+          tags: ['React Native', 'Health', 'Analytics'],
+          fullStory: {
+            challenge: 'A fitness company needed a mobile app that could track workouts, provide real-time feedback, and sync with various fitness devices.',
+            solution: 'We built a React Native app with native device integration, real-time tracking, and personalized workout recommendations.',
+            results: [
+              'Seamless device integration',
+              'Real-time workout tracking',
+              'Personalized recommendations',
+              'Engaged user base'
+            ]
+          }
+        },
+        // SaaS Solutions
+        'llm-integration': {
+          title: 'LLM Integration SDK',
+          summary: 'Created a flexible SDK for enterprise LLM integration',
+          image: '/images/stories/llm-sdk.jpg',
+          tags: ['AI', 'SDK', 'Enterprise'],
+          fullStory: {
+            challenge: 'Multiple enterprise clients needed to integrate LLMs into their existing workflows but were struggling with security and implementation complexity.',
+            solution: 'We developed a flexible SDK that handles authentication, rate limiting, prompt management, and model switching.',
+            results: [
+              '90% reduction in integration time',
+              'Enterprise-grade security',
+              'Multiple LLM support',
+              'Detailed analytics'
+            ]
+          }
+        },
+        'sales-forecasting': {
+          title: 'Sales Forecasting',
+          summary: 'Built an AI-powered sales forecasting system',
+          image: '/images/stories/sales-forecasting.jpg',
+          tags: ['AI', 'Analytics', 'Enterprise'],
+          fullStory: {
+            challenge: 'A retail chain needed accurate sales predictions to optimize inventory management and reduce costs.',
+            solution: 'We developed a machine learning model that analyzes historical data, seasonal trends, and external factors to predict sales.',
             results: [
               '47% increase in prediction accuracy',
               '23% reduction in inventory costs',
-              'Implemented in just 2 weeks',
-              'ROI achieved within first quarter'
+              'Real-time updates',
+              'ROI within first quarter'
             ]
           }
         },
-        'risk-scoring': {
-          title: 'Risk Scoring System',
-          summary: 'Developed an automated risk assessment platform reducing manual review time by 80%',
-          image: '/images/stories/risk-scoring.jpg',
-          tags: ['FinTech', 'Machine Learning', 'Automation'],
+        // ML & Analytics
+        'predictive-analytics': {
+          title: 'Predictive Analytics',
+          summary: 'Implemented predictive analytics for business intelligence',
+          image: '/images/stories/predictive-analytics.jpg',
+          tags: ['ML', 'Analytics', 'Business Intelligence'],
           fullStory: {
-            challenge: 'A financial services company was bottlenecked by manual risk assessment processes. Their team was spending hours reviewing each case, causing delays and inconsistent evaluations.',
-            solution: 'We built an automated scoring system that pulls data from multiple sources, applies machine learning models, and provides instant risk assessments with clear explanations.',
+            challenge: 'A company needed to predict customer behavior and market trends to make data-driven decisions.',
+            solution: 'We built a comprehensive analytics system that combines multiple data sources and ML models to provide actionable insights.',
             results: [
-              '80% reduction in review time',
-              '35% better risk detection',
-              '3-week delivery timeline',
-              'Scalable to 100x current volume'
+              '85% prediction accuracy',
+              'Automated reporting',
+              'Real-time insights',
+              'Data-driven decision making'
             ]
           }
         },
-        'llm-integration': {
-          title: 'LLM Integration SDK',
-          summary: 'Created a flexible SDK for enterprise LLM integration, deployed across 12 companies',
-          image: '/images/stories/llm-sdk.jpg',
-          tags: ['AI', 'Enterprise', 'SDK'],
+        'data-viz': {
+          title: 'Data Visualization',
+          summary: 'Created interactive data visualization dashboards',
+          image: '/images/stories/data-viz.jpg',
+          tags: ['Visualization', 'Analytics', 'Dashboard'],
           fullStory: {
-            challenge: 'Multiple enterprise clients needed to integrate LLMs into their existing workflows but were struggling with security, cost management, and implementation complexity.',
-            solution: 'We developed a flexible SDK that handles authentication, rate limiting, prompt management, and model switching. It includes pre-built modules for common use cases and detailed analytics.',
+            challenge: 'A client needed to make complex data accessible and actionable for non-technical stakeholders.',
+            solution: 'We developed interactive dashboards with real-time data visualization and custom reporting features.',
             results: [
-              '12 successful enterprise deployments',
-              '90% reduction in integration time',
-              '4-week development cycle',
-              'Millions in cost savings'
+              'Intuitive data exploration',
+              'Real-time updates',
+              'Custom reporting',
+              'Improved decision making'
             ]
           }
         }

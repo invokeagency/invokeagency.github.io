@@ -39,40 +39,58 @@ export default {
   data() {
     return {
       stories: [
+        // Integrations & Automation
         {
-          id: 'predictive-analytics',
-          title: 'Sales Forecasting Tool',
-          summary: 'Built an AI-powered sales forecasting system that increased prediction accuracy by 47%',
-          tags: ['AI', 'Data Science', 'Enterprise'],
-          fullStory: {
-            challenge: 'Legacy forecasting systems were causing inventory issues',
-            solution: 'Implemented machine learning models with real-time data integration',
-            results: ['47% increase in prediction accuracy', '23% reduction in inventory costs', '2-week implementation']
-          }
+          id: 'telegram-chatbot',
+          title: 'Telegram Chatbot',
+          summary: 'Built a versatile Telegram bot that automates customer support and engagement',
+          tags: ['Telegram', 'Automation', 'Customer Support']
         },
         {
-          id: 'risk-scoring',
-          title: 'Risk Scoring System',
-          summary: 'Developed an automated risk assessment platform reducing manual review time by 80%',
-          tags: ['FinTech', 'Machine Learning', 'Automation'],
-          fullStory: {
-            challenge: 'Manual risk assessment was causing delays',
-            solution: 'Built an automated scoring system with multiple data points',
-            results: ['80% reduction in review time', '35% better risk detection', '3-week delivery']
-          }
+          id: 'api-gateway',
+          title: 'API Gateway',
+          summary: 'Developed a robust API gateway for microservices architecture',
+          tags: ['API', 'Microservices', 'Architecture']
         },
+        // Mobile Apps
+        {
+          id: 'cross-platform-mvp',
+          title: 'Cross-platform MVP',
+          summary: 'Launched a cross-platform mobile app in record time',
+          tags: ['Flutter', 'Mobile', 'MVP']
+        },
+        {
+          id: 'fitness-tracking',
+          title: 'Fitness Tracking App',
+          summary: 'Created a fitness tracking app with real-time analytics',
+          tags: ['React Native', 'Health', 'Analytics']
+        },
+        // SaaS Solutions
         {
           id: 'llm-integration',
           title: 'LLM Integration SDK',
-          summary: 'Created a flexible SDK for enterprise LLM integration, deployed across 12 companies',
-          tags: ['AI', 'Enterprise', 'SDK'],
-          fullStory: {
-            challenge: 'Companies struggling with LLM integration',
-            solution: 'Developed a flexible, secure SDK with multiple LLM support',
-            results: ['12 successful deployments', '90% reduction in integration time', '4-week development']
-          }
+          summary: 'Created a flexible SDK for enterprise LLM integration',
+          tags: ['AI', 'SDK', 'Enterprise']
+        },
+        {
+          id: 'sales-forecasting',
+          title: 'Sales Forecasting',
+          summary: 'Built an AI-powered sales forecasting system',
+          tags: ['AI', 'Analytics', 'Enterprise']
+        },
+        // ML & Analytics
+        {
+          id: 'predictive-analytics',
+          title: 'Predictive Analytics',
+          summary: 'Implemented predictive analytics for business intelligence',
+          tags: ['ML', 'Analytics', 'Business Intelligence']
+        },
+        {
+          id: 'data-viz',
+          title: 'Data Visualization',
+          summary: 'Created interactive data visualization dashboards',
+          tags: ['Visualization', 'Analytics', 'Dashboard']
         }
-        // Add more stories as needed
       ]
     }
   }

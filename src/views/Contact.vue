@@ -38,6 +38,7 @@
               <option value="prototype">Prototype</option>
               <option value="full-product">Full Product</option>
               <option value="ai-integration">AI Integration</option>
+              <option value="careers">Careers</option>
               <option value="other">Other</option>
             </select>
           </div>
@@ -88,7 +89,7 @@ export default {
       form: {
         name: '',
         email: '',
-        projectType: '',
+        projectType: this.$route.query.type || '',
         timeline: '',
         description: ''
       }

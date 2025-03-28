@@ -19,7 +19,7 @@
             <p class="text-invoke-text/90">Primary Architect & Co-founder</p>
           </div>
           <div class="space-y-2">
-            <p class="text-sm text-invoke-text/90">Full-stack systems architect with expertise in high-performance APIs and cloud infrastructure. Specializes in building scalable solutions for enterprise clients.</p>
+            <p class="text-sm text-invoke-text/90">Architect of high-performance systems serving millions of users. Expert in cloud infrastructure and enterprise-scale solutions.</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">FastAPI</span>
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">MLOps</span>
@@ -39,7 +39,7 @@
             <p class="text-invoke-text/90">Co-founder & Product Specialist</p>
           </div>
           <div class="space-y-2">
-            <p class="text-sm text-invoke-text/90">Product and marketing expert with a proven track record in launching successful digital products. Specializes in user experience and growth strategy.</p>
+            <p class="text-sm text-invoke-text/90">Product leader with a track record of launching market-leading digital products. Specializes in UX and growth strategy.</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">Product</span>
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">UX Design</span>
@@ -59,7 +59,7 @@
             <p class="text-invoke-text/90">Banking Systems Expert</p>
           </div>
           <div class="space-y-2">
-            <p class="text-sm text-invoke-text/90">Top 100 competitive programmer turned banking systems expert. Specializes in high-performance applications and SWIFT integrations.</p>
+            <p class="text-sm text-invoke-text/90">Among the top 100 competitive programmers globally. Expert in complex algorithms and high-performance financial systems.</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">Spring Boot</span>
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">Django</span>
@@ -79,7 +79,7 @@
             <p class="text-invoke-text/90">ML/AI Specialist</p>
           </div>
           <div class="space-y-2">
-            <p class="text-sm text-invoke-text/90">Machine Learning Engineer focused on delivering practical AI solutions for businesses. Expert in building and deploying production-ready ML systems.</p>
+            <p class="text-sm text-invoke-text/90">Machine learning expert focused on production-ready AI solutions. Successfully deployed systems that drive real business value.</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">PyTorch</span>
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">TensorFlow</span>
@@ -99,7 +99,7 @@
             <p class="text-invoke-text/90">Systems & Performance Expert</p>
           </div>
           <div class="space-y-2">
-            <p class="text-sm text-invoke-text/90">Systems architecture expert with deep experience in performance optimization. Delivers robust solutions for complex enterprise requirements.</p>
+            <p class="text-sm text-invoke-text/90">Systems architect specializing in performance optimization. Expert in C++ and CUDA for complex computational challenges.</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">C++</span>
               <span class="px-2 py-1 bg-invoke-accent/20 rounded-md text-xs text-invoke-text">CUDA</span>
@@ -118,7 +118,7 @@
             We're always looking for exceptional developers who share our values: 
             fast execution, clear communication, and a focus on business impact.
           </p>
-          <router-link to="/contact" class="inline-block px-6 py-3 bg-invoke-text text-invoke-bg rounded-xl hover:bg-invoke-accent transition-all duration-200 hover:shadow-lg">
+          <router-link to="/contact?type=careers" class="inline-block px-6 py-3 bg-invoke-text text-invoke-bg rounded-xl hover:bg-invoke-accent transition-all duration-200 hover:shadow-lg">
             Get in Touch
           </router-link>
         </div>
