@@ -1,6 +1,6 @@
 <template>
-  <footer class="border-t border-invoke-text/10 mt-16">
-    <div class="max-w-7xl mx-auto px-6 py-12">
+  <footer class="border-t border-invoke-text/10 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 py-12 mt-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Company Info -->
         <div class="space-y-4">
@@ -81,7 +81,7 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="mt-12 pt-8 border-t border-invoke-text/10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         <p class="text-sm text-invoke-text/40">
           © {{ new Date().getFullYear() }} INVOKE. All rights reserved.
         </p>

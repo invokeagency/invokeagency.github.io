@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-invoke-bg text-invoke-text p-6 flex flex-col items-center justify-start space-y-24 relative overflow-hidden">
+  <div class="min-h-screen bg-invoke-bg text-invoke-text p-6 flex flex-col items-center justify-start space-y-16 relative overflow-hidden">
     <!-- Background gradient -->
     <div class="absolute inset-0 bg-gradient-to-br from-invoke-bg via-invoke-bg/95 to-invoke-bg/90"></div>
     
@@ -10,7 +10,7 @@
     </div>
 
     <!-- Main content with proper padding to avoid logo -->
-    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start relative mt-16 md:mt-0">
+    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start relative mt-32 md:mt-48">
       <div class="space-y-8">
         <div class="relative z-10">
           <div>
@@ -83,7 +83,7 @@
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
           </svg>
-          <span>Stories</span>
+          <span>What We've Built</span>
         </h2>
         <ProjectTree />
       </div>
