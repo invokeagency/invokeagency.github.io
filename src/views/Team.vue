@@ -36,7 +36,7 @@
           </div>
           <div class="space-y-2">
             <h3 class="text-xl font-semibold text-invoke-text">Iren Glass</h3>
-            <p class="text-invoke-text/90">Co-founder & Product Specialist</p>
+            <p class="text-invoke-text/90">Product Specialist & Co-founder</p>
           </div>
           <div class="space-y-2">
             <p class="text-sm text-invoke-text/90">Product leader with a track record of launching market-leading digital products. Specializes in UX and growth strategy.</p>
@@ -56,7 +56,7 @@
           </div>
           <div class="space-y-2">
             <h3 class="text-xl font-semibold text-invoke-text">Luka Tutberidze</h3>
-            <p class="text-invoke-text/90">Banking Systems Expert</p>
+            <p class="text-invoke-text/90">Algorithms Expert</p>
           </div>
           <div class="space-y-2">
             <p class="text-sm text-invoke-text/90">Among the top 100 competitive programmers globally. Expert in complex algorithms and high-performance financial systems.</p>
