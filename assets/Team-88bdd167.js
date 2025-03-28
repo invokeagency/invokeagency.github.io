@@ -1,4 +1,4 @@
-import{_ as i,r as d,o as l,c,a as t,g as a,e as x,w as p,f as v}from"./index-c9f478dc.js";const g={name:"Team",methods:{handleImageError(s){s.target.insertAdjacentHTML("afterend",`
+import{_ as i,r as d,o as l,c,a as t,g as a,e as x,w as p,f as v}from"./index-81b52ffd.js";const g={name:"Team",methods:{handleImageError(s){s.target.insertAdjacentHTML("afterend",`
         <svg class="w-24 h-24 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
         </svg>
