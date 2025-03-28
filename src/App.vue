@@ -6,7 +6,19 @@
         <router-link to="/" class="text-2xl font-bold hover:text-invoke-accent transition-colors">
           INVK<span class="animate-pulse">_</span>
         </router-link>
-        <div class="flex items-center space-x-6">
+
+        <!-- Mobile menu button -->
+        <button @click="isMenuOpen = !isMenuOpen" class="md:hidden text-invoke-text hover:text-invoke-accent">
+          <svg v-if="!isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Desktop menu -->
+        <div class="hidden md:flex items-center space-x-6">
           <router-link to="/" class="text-sm hover:text-invoke-accent transition-colors">
             Home
           </router-link>
@@ -20,6 +32,27 @@
             About
           </router-link>
           <router-link to="/contact" class="text-sm px-4 py-2 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-colors">
+            Contact
+          </router-link>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div v-show="isMenuOpen" class="md:hidden absolute top-full left-0 right-0 bg-invoke-bg/95 backdrop-blur-sm border-b border-invoke-border/10">
+        <div class="px-4 py-4 space-y-4">
+          <router-link @click="isMenuOpen = false" to="/" class="block text-sm hover:text-invoke-accent transition-colors">
+            Home
+          </router-link>
+          <router-link @click="isMenuOpen = false" to="/stories" class="block text-sm hover:text-invoke-accent transition-colors">
+            Stories
+          </router-link>
+          <router-link @click="isMenuOpen = false" to="/team" class="block text-sm hover:text-invoke-accent transition-colors">
+            Team
+          </router-link>
+          <router-link @click="isMenuOpen = false" to="/about" class="block text-sm hover:text-invoke-accent transition-colors">
+            About
+          </router-link>
+          <router-link @click="isMenuOpen = false" to="/contact" class="block text-sm px-4 py-2 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-colors w-full text-center">
             Contact
           </router-link>
         </div>
@@ -44,6 +77,16 @@ export default {
   name: 'App',
   components: {
     Footer
+  },
+  data() {
+    return {
+      isMenuOpen: false
+    }
+  },
+  watch: {
+    $route() {
+      this.isMenuOpen = false
+    }
   }
 }
 </script>

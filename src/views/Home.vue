@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-invoke-bg text-invoke-text p-6 flex flex-col items-center justify-start space-y-16 relative overflow-hidden">
+  <div class="min-h-screen bg-invoke-bg text-invoke-text p-4 sm:p-6 flex flex-col items-center justify-start space-y-16 sm:space-y-24 relative overflow-hidden">
     <!-- Background gradient -->
     <div class="absolute inset-0 bg-gradient-to-br from-invoke-bg via-invoke-bg/95 to-invoke-bg/90"></div>
     
@@ -10,16 +10,16 @@
     </div>
 
     <!-- Main content with proper padding to avoid logo -->
-    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start relative mt-32 md:mt-48">
+    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start relative mt-20 sm:mt-32 md:mt-48">
       <div class="space-y-8">
         <div class="relative z-10">
           <div>
-            <h1 class="text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-invoke-text to-invoke-accent">INVOKE</h1>
-            <p class="text-xl text-invoke-accent">Fast builds. Flexible solutions. Expert execution.</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-invoke-text to-invoke-accent">INVOKE</h1>
+            <p class="text-lg sm:text-xl text-invoke-accent">Fast builds. Flexible solutions. Expert execution.</p>
           </div>
 
           <div class="space-y-6 text-invoke-text/90">
-            <p class="text-lg leading-relaxed">
+            <p class="text-base sm:text-lg leading-relaxed">
               We're a software agency that cuts through the noise. No endless meetings, no overengineered solutions. 
               Just fast, impactful development focused on what matters.
             </p>
@@ -68,19 +68,19 @@
           </div>
 
           <div class="flex flex-col sm:flex-row gap-4 mt-8">
-            <router-link to="/stories" class="px-8 py-3 bg-invoke-text text-invoke-bg rounded-xl hover:bg-invoke-accent transition-all duration-200 hover:shadow-lg">
+            <router-link to="/stories" class="w-full sm:w-auto text-center px-8 py-3 bg-invoke-text text-invoke-bg rounded-xl hover:bg-invoke-accent transition-all duration-200 hover:shadow-lg">
               View Our Work
             </router-link>
-            <router-link to="/contact" class="px-8 py-3 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-all duration-200">
+            <router-link to="/contact" class="w-full sm:w-auto text-center px-8 py-3 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-all duration-200">
               Start Building
             </router-link>
           </div>
         </div>
       </div>
 
-      <div id="projects" class="bg-invoke-panel/90 backdrop-blur-sm text-invoke-bg p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-invoke-border/10 -mr-8">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center space-x-2">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div id="projects" class="bg-invoke-panel/90 backdrop-blur-sm text-invoke-bg p-4 sm:p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-invoke-border/10 -mr-0 sm:-mr-8">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4 flex items-center space-x-2">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
           </svg>
           <span>What We've Built</span>

@@ -1,59 +1,57 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/stories',
-    name: 'stories',
-    component: () => import('../views/Stories.vue')
-  },
-  {
-    path: '/stories/:id',
-    name: 'story',
-    component: () => import('../views/Story.vue')
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/About.vue')
-  },
-  {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('../views/Contact.vue')
-  },
-  {
-    path: '/privacy',
-    name: 'privacy',
-    component: () => import('../views/Privacy.vue')
-  },
-  {
-    path: '/terms',
-    name: 'terms',
-    component: () => import('../views/Terms.vue')
-  },
-  {
-    path: '/team',
-    name: 'team',
-    component: () => import('../views/Team.vue')
-  }
-]
+import About from '../views/About.vue'
+import Contact from '../views/Contact.vue'
+import Team from '../views/Team.vue'
+import Stories from '../views/Stories.vue'
+import Story from '../views/Story.vue'
+import Privacy from '../views/Privacy.vue'
+import Terms from '../views/Terms.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      return { top: 0 }
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component: Team
+    },
+    {
+      path: '/stories',
+      name: 'stories',
+      component: Stories
+    },
+    {
+      path: '/story/:id',
+      name: 'story',
+      component: Story
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: Privacy
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: Terms
     }
-  }
+  ]
 })
 
 export default router 

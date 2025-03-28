@@ -1,81 +1,64 @@
 <template>
   <div class="min-h-screen bg-invoke-bg text-invoke-text p-6">
-    <div class="max-w-4xl mx-auto pt-24 space-y-12">
+    <div class="max-w-4xl mx-auto pt-24 space-y-16">
       <header class="space-y-4">
         <h1 class="text-4xl font-bold">Privacy Policy</h1>
-        <p class="text-xl text-invoke-accent">Last updated: {{ new Date().toLocaleDateString() }}</p>
+        <p class="text-xl text-invoke-accent">How we handle and protect your data</p>
       </header>
 
       <div class="prose prose-invert max-w-none space-y-8">
-        <section class="space-y-4">
-          <h2 class="text-2xl font-semibold">1. Information We Collect</h2>
-          <p class="text-invoke-text/80">
-            We collect information that you provide directly to us, including:
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold">Introduction</h2>
+          <p class="text-lg text-invoke-text/80">
+            At INVOKE, we take your privacy seriously. This Privacy Policy explains how we collect, 
+            use, disclose, and safeguard your information when you visit our website or use our services.
           </p>
-          <ul class="list-disc pl-6 text-invoke-text/80 space-y-2">
-            <li>Name and contact information</li>
-            <li>Project details and requirements</li>
-            <li>Communication preferences</li>
-            <li>Any other information you choose to provide</li>
-          </ul>
-        </section>
+        </div>
 
-        <section class="space-y-4">
-          <h2 class="text-2xl font-semibold">2. How We Use Your Information</h2>
-          <p class="text-invoke-text/80">
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold">Information We Collect</h2>
+          <p class="text-lg text-invoke-text/80">
+            We collect information that you voluntarily provide to us when you:
+          </p>
+          <ul class="list-disc pl-6 text-invoke-text/80">
+            <li>Contact us through our website</li>
+            <li>Subscribe to our newsletter</li>
+            <li>Request a quote or consultation</li>
+            <li>Apply for a position</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold">How We Use Your Information</h2>
+          <p class="text-lg text-invoke-text/80">
             We use the information we collect to:
           </p>
-          <ul class="list-disc pl-6 text-invoke-text/80 space-y-2">
-            <li>Provide and maintain our services</li>
-            <li>Process your project requests</li>
-            <li>Communicate with you about our services</li>
-            <li>Send you updates and marketing communications (with your consent)</li>
-            <li>Improve our services and develop new features</li>
+          <ul class="list-disc pl-6 text-invoke-text/80">
+            <li>Respond to your inquiries</li>
+            <li>Process your requests</li>
+            <li>Send you our newsletter (if subscribed)</li>
+            <li>Improve our services</li>
+            <li>Comply with legal obligations</li>
           </ul>
-        </section>
+        </div>
 
-        <section class="space-y-4">
-          <h2 class="text-2xl font-semibold">3. Information Sharing</h2>
-          <p class="text-invoke-text/80">
-            We do not sell or rent your personal information to third parties. We may share your information with:
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold">Data Security</h2>
+          <p class="text-lg text-invoke-text/80">
+            We implement appropriate technical and organizational security measures to protect 
+            your personal information against unauthorized access, alteration, disclosure, or destruction.
           </p>
-          <ul class="list-disc pl-6 text-invoke-text/80 space-y-2">
-            <li>Service providers who assist in our operations</li>
-            <li>Professional advisors and consultants</li>
-            <li>Law enforcement when required by law</li>
-          </ul>
-        </section>
+        </div>
 
-        <section class="space-y-4">
-          <h2 class="text-2xl font-semibold">4. Data Security</h2>
-          <p class="text-invoke-text/80">
-            We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure.
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold">Contact Us</h2>
+          <p class="text-lg text-invoke-text/80">
+            If you have questions about this Privacy Policy, please contact us at:
           </p>
-        </section>
-
-        <section class="space-y-4">
-          <h2 class="text-2xl font-semibold">5. Your Rights</h2>
-          <p class="text-invoke-text/80">
-            You have the right to:
-          </p>
-          <ul class="list-disc pl-6 text-invoke-text/80 space-y-2">
-            <li>Access your personal information</li>
-            <li>Correct inaccurate information</li>
-            <li>Request deletion of your information</li>
-            <li>Opt-out of marketing communications</li>
-            <li>Object to processing of your information</li>
-          </ul>
-        </section>
-
-        <section class="space-y-4">
-          <h2 class="text-2xl font-semibold">6. Contact Us</h2>
-          <p class="text-invoke-text/80">
-            If you have any questions about this Privacy Policy, please contact us at:
-          </p>
-          <p class="text-invoke-text/80">
-            Email: privacy@invoke.dev
-          </p>
-        </section>
+          <router-link to="/contact" class="text-invoke-accent hover:text-invoke-text transition-colors">
+            Contact Page
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
