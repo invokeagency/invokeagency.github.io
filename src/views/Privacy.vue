@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-invoke-bg text-invoke-text p-6">
-    <div class="max-w-4xl mx-auto pt-24 space-y-16">
+    <div class="max-w-4xl mx-auto pt-24 space-y-8">
       <header class="space-y-4">
         <h1 class="text-4xl font-bold">Privacy Policy</h1>
         <p class="text-xl text-invoke-accent">How we handle and protect your data</p>

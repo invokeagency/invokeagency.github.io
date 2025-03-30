@@ -75,18 +75,20 @@ export default {
       stories: {
         // Integrations & Automation
         'telegram-chatbot': {
-          title: 'Telegram Chatbot',
+          title: 'Telegram Chatbot for B2B Lead Generation',
           summary: 'Built a versatile Telegram bot that automates customer support and engagement',
           image: '/images/stories/telegram-bot.jpg',
-          tags: ['Telegram', 'Automation', 'Customer Support'],
+          tags: ['Referral System', 'Diagnostics Automation', 'CRM Integration'],
           fullStory: {
-            challenge: 'A client needed an automated way to handle customer inquiries and provide instant responses 24/7. Manual support was becoming unsustainable as their user base grew.',
-            solution: 'We developed a Telegram bot that handles common customer queries, provides automated responses, and escalates complex issues to human support when needed.',
+            challenge: 'A company with a complex AI-based diagnostics tool wanted to expand their B2B reach. Their goal was to let small businesses onboard easily, allow employees to generate referral codes, and enable end-users to access the diagnostics experience without needing to install an app — all while tracking leads and syncing with their CRM.',
+            solution: 'We built an end-to-end system comprising:\n\n- A user, business, and referral management platform\n- A Telegram bot replicating the diagnostics experience from their mobile app\n- Lead detection logic based on quiz responses and user actions\n- Integration with their ML-powered diagnostics backend\n- Real-time syncing with their CRM for lead attribution and payouts\n\nEnd-users could enter a referral code, go through diagnostics, view past results, and get updates — all within Telegram. The system logged every interaction, linked leads to the referring business and employee, and triggered payouts accordingly.',
             results: [
-              '90% reduction in support response time',
-              '24/7 automated customer service',
-              'Handles 1000+ daily interactions',
-              'Seamless integration with existing systems'
+              'MVP delivered in 2 weeks',
+              'Go-to-market strategy validated within 1 month',
+              '1000+ referrals processed in the first weeks',
+              '24/7 diagnostics access — no app install needed',
+              'Lower barrier to adoption in Telegram-heavy markets',
+              'Fully automated, scalable lead generation with transparent attribution'
             ]
           }
         },

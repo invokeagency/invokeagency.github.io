@@ -42,9 +42,9 @@ export default {
         // Integrations & Automation
         {
           id: 'telegram-chatbot',
-          title: 'Telegram Chatbot',
-          summary: 'Built a versatile Telegram bot that automates customer support and engagement',
-          tags: ['Telegram', 'Automation', 'Customer Support']
+          title: 'Telegram Chatbot for B2B Lead Generation',
+          summary: 'Built an end-to-end system for B2B lead generation with referral tracking and CRM integration',
+          tags: ['Referral System', 'Diagnostics Automation', 'CRM Integration']
         },
         {
           id: 'api-gateway',

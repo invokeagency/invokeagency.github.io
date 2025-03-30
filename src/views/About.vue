@@ -3,7 +3,7 @@
     <div class="max-w-4xl mx-auto pt-24 space-y-16">
       <header class="space-y-4">
         <h1 class="text-4xl font-bold">About Us</h1>
-        <p class="text-xl text-invoke-accent">Built by developers who got tired of the old way</p>
+        <p class="text-xl text-invoke-accent">Built by developers who grew weary of the old way</p>
       </header>
 
       <div class="prose prose-invert max-w-none space-y-8">
@@ -11,7 +11,7 @@
           <h2 class="text-2xl font-semibold">Our Story</h2>
           <p class="text-lg text-invoke-text/80">
             We started INVOKE because we were frustrated with how software was being built. 
-            Too many meetings, endless planning sessions, and overengineered solutions that 
+            Too many meetings, endless planning sessions, and over-engineered solutions that 
             took months to deliver. We knew there had to be a better way.
           </p>
           <p class="text-lg text-invoke-text/80">
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <div class="pt-8">
+        <div class="pt-2">
           <router-link to="/contact" class="inline-block px-6 py-2 bg-invoke-text text-invoke-bg rounded-xl hover:bg-invoke-accent transition-all duration-200 hover:shadow-lg">
             Work With Us
           </router-link>
