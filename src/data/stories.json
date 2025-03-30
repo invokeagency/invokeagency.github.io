@@ -1,0 +1,215 @@
+{
+  "stories": {
+    "telegram-chatbot": {
+      "id": "telegram-chatbot",
+      "category": "integrations",
+      "addToProjectTree": true,
+      "project": "Telegram Chatbot for B2B Lead Generation",
+      "client": "AI Diagnostics Company",
+      "metrics": [
+        { "value": "1000+", "label": "Referrals" },
+        { "value": "2", "label": "Weeks to MVP" }
+      ],
+      "description": "Built an end-to-end system for B2B lead generation with referral tracking and CRM integration",
+      "technologies": ["Python", "Telegram API", "FastAPI", "PostgreSQL"],
+      "challenge": "A company with a complex AI-based diagnostics tool wanted to expand their B2B reach. Their goal was to let small businesses onboard easily, allow employees to generate referral codes, and enable end-users to access the diagnostics experience without needing to install an app — all while tracking leads and syncing with their CRM.",
+      "solution": "We built an end-to-end system comprising:\n\n- A user, business, and referral management platform\n- A Telegram bot replicating the diagnostics experience from their mobile app\n- Lead detection logic based on quiz responses and user actions\n- Integration with their ML-powered diagnostics backend\n- Real-time syncing with their CRM for lead attribution and payouts\n\nEnd-users could enter a referral code, go through diagnostics, view past results, and get updates — all within Telegram. The system logged every interaction, linked leads to the referring business and employee, and triggered payouts accordingly.",
+      "results": [
+        "MVP delivered in 2 weeks",
+        "Go-to-market strategy validated within 1 month",
+        "1000+ referrals processed in the first weeks",
+        "24/7 diagnostics access — no app install needed",
+        "Lower barrier to adoption in Telegram-heavy markets",
+        "Fully automated, scalable lead generation with transparent attribution"
+      ],
+      "testimonial": {
+        "quote": "The Telegram bot has revolutionized how we reach and serve our B2B customers, making our diagnostics tool accessible to a whole new market segment.",
+        "author": "Product Manager",
+        "company": "AI Diagnostics Company"
+      }
+    },
+    "api-gateway": {
+      "id": "api-gateway",
+      "category": "integrations",
+      "addToProjectTree": true,
+      "project": "API Gateway",
+      "client": "Enterprise Client",
+      "metrics": [
+        { "value": "40%", "label": "Latency Reduction" },
+        { "value": "100%", "label": "Service Coverage" }
+      ],
+      "description": "Developed a robust API gateway for microservices architecture",
+      "technologies": ["Go", "gRPC", "Redis", "Kubernetes"],
+      "challenge": "A client needed to manage multiple microservices with different authentication methods and rate limiting requirements.",
+      "solution": "We built a centralized API gateway that handles authentication, rate limiting, and request routing across all microservices.",
+      "results": [
+        "Unified authentication system",
+        "Improved security and monitoring",
+        "Reduced latency by 40%",
+        "Simplified service management"
+      ],
+      "testimonial": {
+        "quote": "The API gateway has streamlined our microservices architecture, making it easier to manage and secure our services.",
+        "author": "Technical Director",
+        "company": "Enterprise Client"
+      }
+    },
+    "cross-platform-mvp": {
+      "id": "cross-platform-mvp",
+      "category": "mobile-apps",
+      "addToProjectTree": true,
+      "project": "Cross-platform MVP",
+      "client": "Startup",
+      "metrics": [
+        { "value": "2", "label": "Weeks to Launch" },
+        { "value": "100%", "label": "Code Reuse" }
+      ],
+      "description": "Launched a cross-platform mobile app in record time",
+      "technologies": ["Flutter", "Firebase", "REST API"],
+      "challenge": "A startup needed to quickly validate their product idea with a cross-platform mobile app while maintaining high performance.",
+      "solution": "We developed a Flutter-based MVP that delivered native performance across iOS and Android with a single codebase.",
+      "results": [
+        "2-week development cycle",
+        "Native performance on both platforms",
+        "Reduced maintenance costs",
+        "Faster time to market"
+      ]
+    },
+    "fitness-tracking": {
+      "id": "fitness-tracking",
+      "category": "mobile-apps",
+      "addToProjectTree": true,
+      "project": "Fitness Tracking App",
+      "client": "Fitness Company",
+      "metrics": [
+        { "value": "4.8/5", "label": "App Store Rating" },
+        { "value": "50k+", "label": "Active Users" }
+      ],
+      "description": "Created a fitness tracking app with real-time analytics",
+      "technologies": ["React Native", "Node.js", "MongoDB", "WebSocket"],
+      "challenge": "A fitness company needed a mobile app that could track workouts, provide real-time feedback, and sync with various fitness devices.",
+      "solution": "We built a React Native app with native device integration, real-time tracking, and personalized workout recommendations.",
+      "results": [
+        "Seamless device integration",
+        "Real-time workout tracking",
+        "Personalized recommendations",
+        "Engaged user base"
+      ],
+      "testimonial": {
+        "quote": "The app has transformed how our users track their fitness journey, providing a seamless experience across devices.",
+        "author": "Product Director",
+        "company": "Fitness Company"
+      }
+    },
+    "llm-integration": {
+      "id": "llm-integration",
+      "category": "saas",
+      "addToProjectTree": true,
+      "project": "LLM Integration SDK",
+      "client": "Enterprise Clients",
+      "metrics": [
+        { "value": "90%", "label": "Integration Time Reduction" },
+        { "value": "100%", "label": "Security Compliance" }
+      ],
+      "description": "Created a flexible SDK for enterprise LLM integration",
+      "technologies": ["Python", "OpenAI API", "FastAPI", "Docker"],
+      "challenge": "Multiple enterprise clients needed to integrate LLMs into their existing workflows but were struggling with security and implementation complexity.",
+      "solution": "We developed a flexible SDK that handles authentication, rate limiting, prompt management, and model switching.",
+      "results": [
+        "90% reduction in integration time",
+        "Enterprise-grade security",
+        "Multiple LLM support",
+        "Detailed analytics"
+      ],
+      "testimonial": {
+        "quote": "The SDK has made it incredibly easy to integrate LLMs into our enterprise applications while maintaining the highest security standards.",
+        "author": "CTO",
+        "company": "Enterprise Client"
+      }
+    },
+    "sales-forecasting": {
+      "id": "sales-forecasting",
+      "category": "saas",
+      "addToProjectTree": true,
+      "project": "Sales Forecasting",
+      "client": "Retail Chain",
+      "metrics": [
+        { "value": "47%", "label": "Prediction Accuracy" },
+        { "value": "23%", "label": "Cost Reduction" }
+      ],
+      "description": "Built an AI-powered sales forecasting system",
+      "technologies": ["Python", "TensorFlow", "FastAPI", "PostgreSQL"],
+      "challenge": "A retail chain needed accurate sales predictions to optimize inventory management and reduce costs.",
+      "solution": "We developed a machine learning model that analyzes historical data, seasonal trends, and external factors to predict sales.",
+      "results": [
+        "47% increase in prediction accuracy",
+        "23% reduction in inventory costs",
+        "Real-time updates",
+        "ROI within first quarter"
+      ],
+      "testimonial": {
+        "quote": "The forecasting system has significantly improved our inventory management and reduced costs across all stores.",
+        "author": "Operations Director",
+        "company": "Retail Chain"
+      }
+    },
+    "predictive-analytics": {
+      "id": "predictive-analytics",
+      "category": "ml-analytics",
+      "addToProjectTree": true,
+      "project": "Predictive Analytics",
+      "client": "Business Intelligence Company",
+      "metrics": [
+        { "value": "85%", "label": "Prediction Accuracy" },
+        { "value": "100%", "label": "Automation" }
+      ],
+      "description": "Implemented predictive analytics for business intelligence",
+      "technologies": ["Python", "scikit-learn", "FastAPI", "React"],
+      "challenge": "A company needed to predict customer behavior and market trends to make data-driven decisions.",
+      "solution": "We built a comprehensive analytics system that combines multiple data sources and ML models to provide actionable insights.",
+      "results": [
+        "85% prediction accuracy",
+        "Automated reporting",
+        "Real-time insights",
+        "Data-driven decision making"
+      ],
+      "testimonial": {
+        "quote": "The predictive analytics system has transformed our decision-making process, providing accurate insights that drive business growth.",
+        "author": "Analytics Director",
+        "company": "Business Intelligence Company"
+      }
+    },
+    "data-viz": {
+      "id": "data-viz",
+      "category": "ml-analytics",
+      "addToProjectTree": true,
+      "project": "Data Visualization",
+      "client": "Data Analytics Company",
+      "metrics": [
+        { "value": "100%", "label": "Interactive" },
+        { "value": "50%", "label": "Time Saved" }
+      ],
+      "description": "Created interactive data visualization dashboards",
+      "technologies": ["React", "D3.js", "FastAPI", "PostgreSQL"],
+      "challenge": "A client needed to make complex data accessible and actionable for non-technical stakeholders.",
+      "solution": "We developed interactive dashboards with real-time data visualization and custom reporting features.",
+      "results": [
+        "Intuitive data exploration",
+        "Real-time updates",
+        "Custom reporting",
+        "Improved decision making"
+      ],
+      "testimonial": {
+        "quote": "The visualization dashboards have made our data accessible to everyone in the organization, leading to better-informed decisions.",
+        "author": "Data Director",
+        "company": "Data Analytics Company"
+      }
+    }
+  },
+  "categories": {
+    "integrations": "Integrations & Automation",
+    "mobile-apps": "Mobile Apps",
+    "saas": "SaaS Solutions",
+    "ml-analytics": "ML & Analytics"
+  }
+} 

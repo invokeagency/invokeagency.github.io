@@ -1,0 +1,49 @@
+{
+  "members": {
+    "frederik": {
+      "name": "Frederik Gram",
+      "role": "Founder & CEO",
+      "image": "https://i.pravatar.cc/150?img=1",
+      "bio": "Frederik is a seasoned software engineer with over a decade of experience in building scalable systems. He founded Invoke to help businesses leverage cutting-edge technology for real-world impact. His expertise spans cloud architecture, AI integration, and enterprise solutions.",
+      "skills": ["Cloud Architecture", "AI/ML", "System Design", "Enterprise Solutions"],
+      "linkedin": "https://linkedin.com/in/frederik-gram",
+      "github": "https://github.com/frederikgram"
+    },
+    "iren": {
+      "name": "Iren Glass",
+      "role": "Lead Developer",
+      "image": "https://i.pravatar.cc/150?img=2",
+      "bio": "Iren is a full-stack developer with a passion for creating elegant solutions to complex problems. She specializes in modern web technologies and has led numerous successful projects in fintech and e-commerce domains.",
+      "skills": ["Full-stack Development", "React", "Node.js", "TypeScript"],
+      "linkedin": "https://linkedin.com/in/iren-glass",
+      "github": "https://github.com/irenglass"
+    },
+    "luka": {
+      "name": "Luka Tutberidze",
+      "role": "ML Engineer",
+      "image": "https://i.pravatar.cc/150?img=3",
+      "bio": "Luka is an ML engineer with expertise in natural language processing and computer vision. He has implemented various AI solutions for enterprise clients and continues to push the boundaries of what's possible with machine learning.",
+      "skills": ["Machine Learning", "NLP", "Computer Vision", "Python"],
+      "linkedin": "https://linkedin.com/in/luka-tutberidze",
+      "github": "https://github.com/lukatut"
+    },
+    "lasse": {
+      "name": "Lasse Usbeck",
+      "role": "DevOps Engineer",
+      "image": "https://i.pravatar.cc/150?img=4",
+      "bio": "Lasse is a DevOps expert who ensures our infrastructure runs smoothly and securely. He has extensive experience in cloud platforms and automation, helping teams deliver software faster and more reliably.",
+      "skills": ["DevOps", "AWS", "Kubernetes", "CI/CD"],
+      "linkedin": "https://linkedin.com/in/lasse-usbeck",
+      "github": "https://github.com/lasseusbeck"
+    },
+    "anton": {
+      "name": "Anton Kopylov",
+      "role": "Frontend Developer",
+      "image": "https://i.pravatar.cc/150?img=5",
+      "bio": "Anton is a frontend specialist with an eye for detail and user experience. He transforms complex requirements into intuitive interfaces, ensuring our applications are both beautiful and functional.",
+      "skills": ["Frontend Development", "Vue.js", "UI/UX", "Animation"],
+      "linkedin": "https://linkedin.com/in/anton-kopylov",
+      "github": "https://github.com/antonkopylov"
+    }
+  }
+} 
