@@ -1,6 +1,6 @@
 {
-  "stories": {
-    "telegram-chatbot": {
+  "stories": [
+    {
       "id": "telegram-chatbot",
       "category": "integrations",
       "addToProjectTree": true,
@@ -13,7 +13,7 @@
       "description": "Built an end-to-end system for B2B lead generation with referral tracking and CRM integration",
       "technologies": ["Python", "Telegram API", "FastAPI", "PostgreSQL"],
       "challenge": "A company with a complex AI-based diagnostics tool wanted to expand their B2B reach. Their goal was to let small businesses onboard easily, allow employees to generate referral codes, and enable end-users to access the diagnostics experience without needing to install an app — all while tracking leads and syncing with their CRM.",
-      "solution": "We built an end-to-end system comprising:\n\n- A user, business, and referral management platform\n- A Telegram bot replicating the diagnostics experience from their mobile app\n- Lead detection logic based on quiz responses and user actions\n- Integration with their ML-powered diagnostics backend\n- Real-time syncing with their CRM for lead attribution and payouts\n\nEnd-users could enter a referral code, go through diagnostics, view past results, and get updates — all within Telegram. The system logged every interaction, linked leads to the referring business and employee, and triggered payouts accordingly.",
+      "solution": "We built an end-to-end system that includes a user management platform, a Telegram bot replicating the diagnostics experience, and lead detection logic. The system integrates with their ML-powered diagnostics backend and CRM, enabling real-time lead attribution and automated payouts. End-users can access diagnostics, view results, and get updates — all within Telegram.",
       "results": [
         "MVP delivered in 2 weeks",
         "Go-to-market strategy validated within 1 month",
@@ -28,7 +28,7 @@
         "company": "AI Diagnostics Company"
       }
     },
-    "api-gateway": {
+    {
       "id": "api-gateway",
       "category": "integrations",
       "addToProjectTree": true,
@@ -54,7 +54,7 @@
         "company": "Enterprise Client"
       }
     },
-    "cross-platform-mvp": {
+    {
       "id": "cross-platform-mvp",
       "category": "mobile-apps",
       "addToProjectTree": true,
@@ -75,7 +75,7 @@
         "Faster time to market"
       ]
     },
-    "fitness-tracking": {
+    {
       "id": "fitness-tracking",
       "category": "mobile-apps",
       "addToProjectTree": true,
@@ -101,7 +101,7 @@
         "company": "Fitness Company"
       }
     },
-    "llm-integration": {
+    {
       "id": "llm-integration",
       "category": "saas",
       "addToProjectTree": true,
@@ -127,7 +127,7 @@
         "company": "Enterprise Client"
       }
     },
-    "sales-forecasting": {
+    {
       "id": "sales-forecasting",
       "category": "saas",
       "addToProjectTree": true,
@@ -153,7 +153,7 @@
         "company": "Retail Chain"
       }
     },
-    "predictive-analytics": {
+    {
       "id": "predictive-analytics",
       "category": "ml-analytics",
       "addToProjectTree": true,
@@ -179,7 +179,7 @@
         "company": "Business Intelligence Company"
       }
     },
-    "data-viz": {
+    {
       "id": "data-viz",
       "category": "ml-analytics",
       "addToProjectTree": true,
@@ -205,7 +205,7 @@
         "company": "Data Analytics Company"
       }
     }
-  },
+  ],
   "categories": {
     "integrations": "Integrations & Automation",
     "mobile-apps": "Mobile Apps",

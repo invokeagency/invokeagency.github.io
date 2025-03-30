@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-invoke-bg text-invoke-text p-6">
     <div class="max-w-4xl mx-auto pt-24">
-      <div v-if="story" class="space-y-12">
+      <div v-if="story" class="space-y-8">
         <header class="space-y-4">
           <h1 class="text-4xl font-bold">{{ story.project }}</h1>
           <p class="text-xl text-invoke-accent">{{ story.client }}</p>
@@ -39,14 +39,12 @@
           </ul>
         </div>
 
-        <div v-if="story.testimonial" class="bg-invoke-bg/40 backdrop-blur-sm rounded-2xl p-6 border border-invoke-border/10">
-          <blockquote class="text-lg text-invoke-text/80 italic mb-4">
-            "{{ story.testimonial.quote }}"
-          </blockquote>
-          <div class="text-sm text-invoke-text/70">
-            <div class="font-medium">{{ story.testimonial.author }}</div>
-            <div>{{ story.testimonial.company }}</div>
-          </div>
+        <div v-if="story.testimonial" class="border-l-2 border-invoke-accent/20 pl-4 ml-2">
+          <p class="text-invoke-text/70 italic">{{ story.testimonial.quote }}</p>
+          <p class="mt-2 text-sm">
+            <span class="text-invoke-accent">{{ story.testimonial.author }}</span>
+            <span class="text-invoke-text/50"> · {{ story.testimonial.company }}</span>
+          </p>
         </div>
 
         <div class="flex justify-between items-center pt-8 border-t border-invoke-border/20">
@@ -88,7 +86,7 @@ export default {
   },
   computed: {
     story() {
-      return this.stories[this.$route.params.id]
+      return this.stories.find(story => story.id === this.$route.params.id)
     }
   }
 }
