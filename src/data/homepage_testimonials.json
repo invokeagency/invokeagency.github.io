@@ -1,0 +1,31 @@
+{
+  "testimonials": [
+    {
+      "quote": "Invoke transformed our vision into reality with remarkable speed and precision. Their team's expertise and direct communication made the entire process seamless.",
+      "author": "Sarah Chen",
+      "company": "TechCorp",
+      "image": "sarah-chen.jpg",
+      "linkedin": "https://www.linkedin.com/company/oneinvoke/"
+    },
+    {
+      "quote": "The team at Invoke delivered beyond our expectations. Their ability to understand our business needs and translate them into elegant solutions was impressive.",
+      "author": "Michael Rodriguez",
+      "company": "InnovateLabs",
+      "image": "michael-rodriguez.jpg",
+      "linkedin": "https://www.linkedin.com/company/oneinvoke/"
+    },
+    {
+      "quote": "What impressed us most was their focus on business outcomes. They didn't just write code - they built solutions that drove real value for our company.",
+      "author": "Emma Thompson",
+      "company": "GrowthTech",
+      "linkedin": "https://www.linkedin.com/company/oneinvoke/"
+    },
+    {
+      "quote": "The speed at which Invoke delivered our project was remarkable. They cut through the complexity and delivered exactly what we needed.",
+      "author": "David Park",
+      "company": "StartupX",
+      "image": "david-park.jpg",
+      "linkedin": "https://www.linkedin.com/company/oneinvoke/"
+    }
+  ]
+} 
