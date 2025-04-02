@@ -1,7 +1,8 @@
 <template>
   <div class="space-y-4">
     <div v-for="(category, categoryId) in categories" :key="categoryId" class="group">
-      <div class="flex items-center space-x-2 text-invoke-bg bg-invoke-bg/5 rounded-lg p-1.5 hover:bg-invoke-bg/10 transition-all duration-200">
+      <div class="flex items-center space-x-2 text-invoke-bg bg-invoke-bg/5 rounded-lg p-1.5 hover:bg-invoke-bg/10 transition-all duration-200 cursor-pointer"
+           @click="navigateToExpertise(categoryId)">
         <svg class="w-4 h-4 text-invoke-bg transform group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
         </svg>
@@ -42,7 +43,13 @@ export default {
   data() {
     return {
       stories: storiesData.stories,
-      categories: storiesData.categories
+      categories: storiesData.categories,
+      categoryToDomain: {
+        'ml-analytics': 'ml-analytics',
+        'integrations': 'integrations',
+        'mobile-apps': 'mobile-apps',
+        'saas': 'saas'
+      }
     }
   },
   methods: {
@@ -55,7 +62,13 @@ export default {
         }))
     },
     navigateToStory(storyId) {
-      this.$router.push(`/story/${storyId}`)
+      this.$router.push(`/stories/${storyId}`)
+    },
+    navigateToExpertise(categoryId) {
+      const domainId = this.categoryToDomain[categoryId]
+      if (domainId) {
+        this.$router.push(`/expertise#${domainId}`)
+      }
     }
   }
 }

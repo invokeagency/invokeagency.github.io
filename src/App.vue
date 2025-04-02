@@ -25,6 +25,9 @@
           <router-link to="/stories" class="text-sm hover:text-invoke-accent transition-colors">
             Stories
           </router-link>
+          <router-link to="/expertise" class="text-sm hover:text-invoke-accent transition-colors">
+            Expertise
+          </router-link>
           <router-link to="/team" class="text-sm hover:text-invoke-accent transition-colors">
             Team
           </router-link>
@@ -45,6 +48,9 @@
           </router-link>
           <router-link @click="isMenuOpen = false" to="/stories" class="block text-sm hover:text-invoke-accent transition-colors">
             Stories
+          </router-link>
+          <router-link @click="isMenuOpen = false" to="/expertise" class="block text-sm hover:text-invoke-accent transition-colors">
+            Expertise
           </router-link>
           <router-link @click="isMenuOpen = false" to="/team" class="block text-sm hover:text-invoke-accent transition-colors">
             Team

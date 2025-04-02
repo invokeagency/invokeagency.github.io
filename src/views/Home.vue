@@ -82,33 +82,58 @@
                 <div :key="currentTestimonial.quote">
                   <div class="absolute -left-0 top-0">
                     <div class="w-12 h-12 rounded-full bg-invoke-accent/10 overflow-hidden">
-                      <img 
-                        v-if="currentTestimonial.image" 
-                        :src="'/assets/images/' + currentTestimonial.image" 
-                        :alt="currentTestimonial.author"
-                        class="w-full h-full object-cover"
-                        @error="handleImageError"
-                      >
-                      <div v-else class="w-full h-full flex items-center justify-center text-invoke-accent">
-                        {{ getInitials(currentTestimonial.author) }}
-                      </div>
+                      <a v-if="currentTestimonial.linkedin" 
+                         :href="currentTestimonial.linkedin" 
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         class="block">
+                        <template v-if="currentTestimonial.image && !imageLoadError">
+                          <img 
+                            :src="'/src/assets/images/' + currentTestimonial.image" 
+                            :alt="currentTestimonial.author"
+                            class="w-full h-full object-cover hover:opacity-90 transition-opacity"
+                            @error="handleImageError"
+                          >
+                        </template>
+                        <div v-else class="w-full h-full flex items-center justify-center text-invoke-accent">
+                          {{ getInitials(currentTestimonial.author) }}
+                        </div>
+                      </a>
+                      <template v-else>
+                        <template v-if="currentTestimonial.image && !imageLoadError">
+                          <img 
+                            :src="'/src/assets/images/' + currentTestimonial.image" 
+                            :alt="currentTestimonial.author"
+                            class="w-full h-full object-cover"
+                            @error="handleImageError"
+                          >
+                        </template>
+                        <div v-else class="w-full h-full flex items-center justify-center text-invoke-accent">
+                          {{ getInitials(currentTestimonial.author) }}
+                        </div>
+                      </template>
                     </div>
                   </div>
                   <div class="border-l-2 border-invoke-accent/20 pl-4">
                     <p class="text-invoke-text/70 italic">{{ currentTestimonial.quote }}</p>
                     <p class="mt-2 text-sm flex items-center gap-2">
-                      <span class="text-invoke-accent">{{ currentTestimonial.author }}</span>
-                      <span class="text-invoke-text/50">·</span>
-                      <span class="text-invoke-text/50">{{ currentTestimonial.company }}</span>
                       <a v-if="currentTestimonial.linkedin" 
                          :href="currentTestimonial.linkedin" 
                          target="_blank"
                          rel="noopener noreferrer"
-                         class="text-invoke-text/50 hover:text-invoke-accent transition-colors">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
+                         class="text-invoke-accent hover:text-invoke-accent/80 transition-colors">
+                        {{ currentTestimonial.author }}
                       </a>
+                      <span v-else class="text-invoke-accent">{{ currentTestimonial.author }}</span>
+                      <span class="text-invoke-text/50">·</span>
+                      <a v-if="currentTestimonial.companyLinkedIn" 
+                         :href="currentTestimonial.companyLinkedIn" 
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         class="text-invoke-text/50 hover:text-invoke-accent transition-colors">
+                        {{ currentTestimonial.company }}
+                      </a>
+                      <span v-else class="text-invoke-text/50">{{ currentTestimonial.company }}</span>
                     </p>
                   </div>
                 </div>
@@ -144,7 +169,8 @@ export default {
     return {
       testimonials: testimonialsData.testimonials,
       currentTestimonial: testimonialsData.testimonials[0],
-      testimonialInterval: null
+      testimonialInterval: null,
+      imageLoadError: false
     }
   },
   methods: {
@@ -153,13 +179,15 @@ export default {
       let newIndex
       do {
         newIndex = Math.floor(Math.random() * this.testimonials.length)
-      } while (newIndex === currentIndex)
+      } while (newIndex === currentIndex && this.testimonials.length > 1)
       return this.testimonials[newIndex]
     },
     updateTestimonial() {
+      this.imageLoadError = false
       this.currentTestimonial = this.getRandomTestimonial()
     },
     getInitials(name) {
+      if (!name) return ''
       return name
         .split(' ')
         .map(word => word[0])
@@ -167,16 +195,15 @@ export default {
         .toUpperCase()
     },
     handleImageError(event) {
-      event.target.style.display = 'none'
-      event.target.parentElement.innerHTML = `<div class="w-full h-full flex items-center justify-center text-invoke-accent">${this.getInitials(this.currentTestimonial.author)}</div>`
+      this.imageLoadError = true
     }
   },
   mounted() {
-    // Update testimonial every 30 seconds
-    this.testimonialInterval = setInterval(this.updateTestimonial, 30000)
+    if (this.testimonials && this.testimonials.length > 0) {
+      this.testimonialInterval = setInterval(this.updateTestimonial, 30000)
+    }
   },
   beforeDestroy() {
-    // Clean up interval when component is destroyed
     if (this.testimonialInterval) {
       clearInterval(this.testimonialInterval)
     }
