@@ -8,6 +8,7 @@ import Terms from '../views/Terms.vue'
 import Expertise from '../views/Expertise.vue'
 import Team from '../views/Team.vue'
 import About from '../views/About.vue'
+import Thanks from '../views/Thanks.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -56,6 +57,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/thanks',
+      name: 'thanks',
+      component: Thanks
     }
   ]
 })
