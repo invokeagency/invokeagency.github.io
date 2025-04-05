@@ -1,48 +1,84 @@
 {
-  "members": {
-    "frederik": {
-      "name": "Frederik Gram",
-      "role": "Founder & CEO",
-      "image": "https://i.pravatar.cc/150?img=1",
-      "bio": "Frederik is a seasoned software engineer with over a decade of experience in building scalable systems. He founded Invoke to help businesses leverage cutting-edge technology for real-world impact. His expertise spans cloud architecture, AI integration, and enterprise solutions.",
-      "skills": ["Cloud Architecture", "AI/ML", "System Design", "Enterprise Solutions"],
-      "linkedin": "https://linkedin.com/in/frederik-gram",
-      "github": "https://github.com/frederikgram"
-    },
-    "iren": {
-      "name": "Iren Glass",
-      "role": "Lead Developer",
-      "image": "https://i.pravatar.cc/150?img=2",
-      "bio": "Iren is a full-stack developer with a passion for creating elegant solutions to complex problems. She specializes in modern web technologies and has led numerous successful projects in fintech and e-commerce domains.",
-      "skills": ["Full-stack Development", "React", "Node.js", "TypeScript"],
-      "linkedin": "https://linkedin.com/in/iren-glass"
-    },
-    "luka": {
-      "name": "Jacob Smith",
-      "role": "ML Engineer",
-      "image": "https://i.pravatar.cc/150?img=3",
-      "bio": "Luka is an ML engineer with expertise in natural language processing and computer vision. He has implemented various AI solutions for enterprise clients and continues to push the boundaries of what's possible with machine learning.",
-      "skills": ["Machine Learning", "NLP", "Computer Vision", "Python"],
-      "linkedin": "https://linkedin.com/in/luka-tutberidze",
-      "github": "https://github.com/lukatut"
-    },
-    "lasse": {
-      "name": "Lasse Usbeck",
-      "role": "DevOps Engineer",
-      "image": "https://i.pravatar.cc/150?img=4",
-      "bio": "Lasse is a DevOps expert who ensures our infrastructure runs smoothly and securely. He has extensive experience in cloud platforms and automation, helping teams deliver software faster and more reliably.",
-      "skills": ["DevOps", "AWS", "Kubernetes", "CI/CD"],
-      "linkedin": "https://linkedin.com/in/lasse-usbeck",
-      "github": "https://github.com/lasseusbeck"
-    },
-    "anton": {
-      "name": "Anton Kopylov",
-      "role": "Frontend Developer",
-      "image": "https://i.pravatar.cc/150?img=5",
-      "bio": "Anton is a frontend specialist with an eye for detail and user experience. He transforms complex requirements into intuitive interfaces, ensuring our applications are both beautiful and functional.",
-      "skills": ["Frontend Development", "Vue.js", "UI/UX", "Animation"],
-      "linkedin": "https://linkedin.com/in/anton-kopylov",
-      "github": "https://github.com/antonkopylov"
+    "members": {
+        "frederik": {
+            "name": "Frederik Gram",
+            "role": "Founder & CEO",
+            "image": "https://i.pravatar.cc/150?img=1",
+            "bio": "Frederik Gram Kortegaard is a versatile software engineer and AI specialist with a strong track record of building scalable systems, intelligent pipelines, and high-performance APIs. With experience spanning cybersecurity, cloud AI engineering, and research-driven deep learning, he combines hands-on engineering with cutting-edge machine learning to solve real-world problems. Frederik founded Invoke to help businesses move faster and smarter by delivering production-ready technology with startup speed and enterprise-grade quality.",
+            "skills": [
+                "Software Architecture & DevOps",
+                "Cloud Engineering (Azure, AWS, GCP)",
+                "LLM Systems & RAG",
+                "MLOps & Model Deployment"
+            ],
+            "linkedin": "https://linkedin.com/in/frederik-gram",
+            "github": "https://github.com/frederikgram"
+        },
+        "iren": {
+            "name": "Iren Glass",
+            "role": "Lead Developer",
+            "image": "https://i.pravatar.cc/150?img=2",
+            "bio": "Iren is a full-stack developer with a passion for creating elegant solutions to complex problems. She specializes in modern web technologies and has led numerous successful projects in fintech and e-commerce domains.",
+            "skills": [
+                "Full-stack Development",
+                "React",
+                "Node.js",
+                "TypeScript"
+            ],
+            "linkedin": "https://linkedin.com/in/iren-glass"
+        },
+        "lasse": {
+            "name": "Lasse Usbeck",
+            "role": "Machine Learning Engineer",
+            "image": "https://i.pravatar.cc/150?img=4",
+            "bio": "Lasse is a machine learning engineer with a strong background in deep learning, neural network optimization, and reinforcement learning. He specializes in building robust, high-performance models for complex tasks, and has contributed to the design of novel architectures and optimization techniques. With a passion for experimental research and hands-on engineering, he bridges the gap between cutting-edge theory and production-grade solutions.",
+            "skills": [
+                "Deep Learning",
+                "Neural Network Architecture",
+                "Optimization Algorithms",
+                "Reinforcement Learning",
+                "Python",
+                "PyTorch",
+                "TensorFlow"
+            ],
+            "linkedin": "https://linkedin.com/in/lasse-usbeck",
+            "github": "https://github.com/lasseusbeck"
+        },
+        "anton": {
+            "name": "Anton Kopylov",
+            "role": "Software Engineer",
+            "image": "https://i.pravatar.cc/150?img=5",
+            "bio": "Anton is a highly versatile software engineer with deep experience in DevOps, AI, and cross-platform system development. With a background in mechatronics and microelectronics, he’s contributed to AI-driven measurement systems, neural algorithm tooling, and robust infrastructure automation. Whether building low-level C++ systems, optimizing Python workflows, or designing resilient CI/CD pipelines, Anton bridges hardware-aware engineering with modern ML-driven applications.",
+            "skills": [
+                "DevOps",
+                "C++",
+                "Python",
+                "CI/CD",
+                "AI/ML",
+                "Cross-Platform Systems",
+                "System Integration",
+                "Software Optimization"
+            ],
+            "linkedin": "https://linkedin.com/in/anton-kopylov",
+            "github": "https://github.com/antonkopylov"
+        },
+        "alberto": {
+  "name": "Alberto Schiabel",
+  "role": "Senior Software Engineer",
+  "image": "https://i.pravatar.cc/150?img=6",
+  "bio": "Alberto is a senior software engineer and systems thinker with over a decade of experience across full-stack development, systems programming, and scientific computing. With deep expertise in TypeScript, WebAssembly, and functional programming, he builds robust, high-performance software for complex domains. He has consulted for governments, energy optimization initiatives, and fast-scaling startups, and is a long-time open-source contributor to Prisma ORM. Whether it's backend logistics, frontend architecture, or native-level performance with Rust and Wasm, Alberto delivers elegant solutions with expert precision.",
+  "skills": [
+    "TypeScript",
+    "WebAssembly",
+    "Rust",
+    "Functional Programming",
+    "System Architecture",
+    "Open Source Development",
+    "Node.js",
+    "C++"
+  ],
+  "linkedin": "https://linkedin.com/in/alberto-schiabel",
+  "github": "https://github.com/jkomyno"
+}
     }
-  }
-} 
+}

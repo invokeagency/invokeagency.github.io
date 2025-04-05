@@ -55,7 +55,7 @@ export default {
   methods: {
     getStoriesForCategory(categoryId) {
       return Object.values(this.stories)
-        .filter(story => story.category === categoryId && story.addToProjectTree)
+        .filter(story => story.categories && story.categories.includes(categoryId) && story.addToProjectTree)
         .map(story => ({
           id: story.id,
           project: story.project

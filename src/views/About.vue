@@ -3,22 +3,22 @@
     <div class="max-w-4xl mx-auto pt-24 space-y-16">
       <header class="space-y-4">
         <h1 class="text-4xl font-bold">About Us</h1>
-        <p class="text-xl text-invoke-accent">Built by developers who grew weary of the old way</p>
+        <p class="text-xl text-invoke-accent">Built by developers who actually ship products</p>
       </header>
 
       <div class="prose prose-invert max-w-none space-y-8">
         <div class="space-y-4">
           <h2 class="text-2xl font-semibold">Our Story</h2>
           <p class="text-lg text-invoke-text/80">
-            We started INVOKE because we were frustrated with how software was being built. 
-            Too many meetings, endless planning sessions, and over-engineered solutions that 
-            took months to deliver. We knew there had to be a better way.
+            We started INVOKE out of frustration with how software gets built these days. 
+            Too many meetings, too much planning, and way too many over-engineered solutions
+            that waste months of development time. So we built a better way.
           </p>
           <p class="text-lg text-invoke-text/80">
-            Our team comes from backgrounds in AI, data science, and enterprise software. 
-            We've built products that serve millions of users and have worked with companies 
-            from startups to Fortune 500s. But more importantly, we've learned what actually 
-            matters when building software: speed, communication, and business impact.
+            Our team brings together expertise in AI engineering, data science, and product development. 
+            We build impactful products for startups and growing businesses. That includes custom LLM 
+            Integration SDKs, advanced AI with Langchain and LangGraph, and scalable solutions on 
+            Kubernetes and Azure. We're both engineers and product people - focused on delivering real value.
           </p>
         </div>
 
@@ -31,9 +31,9 @@
               <h3 class="text-xl font-semibold">Speed First</h3>
             </div>
             <p class="text-invoke-text/80">
-              We believe in rapid iteration and quick wins. Our projects typically go from 
+              We believe in rapid iteration and quick wins. Our projects go from 
               concept to working prototype in 1-2 weeks. We focus on core functionality 
-              first and add complexity only when it provides real value.
+              first and only add complexity when it provides real value.
             </p>
           </div>
 
@@ -46,8 +46,8 @@
             </div>
             <p class="text-invoke-text/80">
               Fast doesn't mean sloppy. We maintain high standards through automated testing, 
-              code reviews, and best practices. Our team has the experience to know where to 
-              focus quality efforts for maximum impact.
+              observability with tools like Langfuse, and battle-tested best practices. We know 
+              where to focus quality efforts for maximum impact.
             </p>
           </div>
 
@@ -61,7 +61,7 @@
             <p class="text-invoke-text/80">
               No account managers or unnecessary layers. You work directly with the people 
               building your product. We use async communication when possible and jump on 
-              quick calls when needed.
+              quick calls when needed to make sure we're aligned and moving fast.
             </p>
           </div>
 
@@ -74,7 +74,8 @@
             </div>
             <p class="text-invoke-text/80">
               Every feature we build ties back to business value. We help prioritize what 
-              will drive real results and focus development efforts where they matter most.
+              will drive real results and focus development efforts where they matter most - 
+              whether that's an AI-powered feature or a cloud infrastructure upgrade.
             </p>
           </div>
         </div>

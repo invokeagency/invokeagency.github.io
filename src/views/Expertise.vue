@@ -83,19 +83,19 @@
                 <div class="flex items-center justify-between">
                   <h3 class="text-lg font-medium">{{ domain.stories.length === 1 ? 'Featured Story' : 'Featured Stories' }}</h3>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-6">
                   <div v-for="storyId in domain.stories.slice(0, 2)" 
                        :key="storyId"
-                       class="space-y-1">
+                       class="space-y-2">
                     <div class="flex items-center gap-2">
                       <svg class="w-4 h-4 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       <h4 class="font-medium text-sm">{{ getStoryTitle(storyId) }}</h4>
                     </div>
-                    <p class="text-xs text-invoke-text/70 pl-6 line-clamp-2">{{ getStoryDescription(storyId) }}</p>
+                    <p class="text-sm text-invoke-text/80 pl-6 line-clamp-4">{{ getStoryDescription(storyId) }}</p>
                     <router-link :to="{ name: 'story', params: { id: storyId }}" 
-                               class="inline-flex items-center gap-1 text-xs text-invoke-accent hover:text-invoke-text transition-colors pl-6">
+                               class="inline-flex items-center gap-1 text-xs text-invoke-accent hover:text-invoke-text transition-colors pl-6 mt-1">
                       Read story
                       <svg class="w-3.5 h-3.5 transform hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -209,6 +209,13 @@ export default {
 </script>
 
 <style>
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;

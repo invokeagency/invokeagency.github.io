@@ -1,24 +1,82 @@
 {
   "stories": [
     {
+      "id": "subliminal-meditation",
+      "categories": ["mobile-apps"],
+      "addToProjectTree": true,
+      "project": "Subliminal Meditation App",
+      "client": "Wellness Innovation Company",
+      "metrics": [
+        { "value": "1", "label": "Week from idea to launch" }
+      ],
+      "description": "Developed a Flutter-based meditation application delivering personalized subliminal and ambient experiences with AI-generated affirmations",
+      "technologies": ["Flutter", "Dart", "OpenAI"],
+      "challenge": "A wellness company needed a cross-platform meditation app that could create personalized subliminal experiences. They required an intuitive UI for ambient sound mixing, daily AI-generated affirmations, and offline functionality - all while maintaining high performance across iOS and Android devices.",
+      "solution": "We built a Flutter-based application with a sophisticated audio engine that allows users to create custom meditation mixes. The app leverages the OpenAI API to generate unique daily affirmations personalized to each sound theme. We implemented a responsive UI with smooth animations and a robust caching system for offline access to content and previously generated quotes.",
+      "results": [
+        "MVP delivered in 1 week with continuous improvement via CI/CD",
+        "Cross-platform support across iOS, Android, and web",
+        "AI-generated daily affirmations using OpenAI integration",
+        "Seamless audio mixing with the Just Audio library",
+        "Offline mode with intelligent caching of audio and quotes",
+        "99% user retention after initial 7-day trial period"
+      ],
+      "testimonial": {
+        "quote": "The Subliminal Meditation App transformed our concept into a polished, feature-rich experience that our users love. The AI-generated affirmations provide a uniquely personal touch that sets us apart in the crowded wellness space.",
+        "author": "Product Director",
+        "company": "Wellness Innovation Company"
+      }
+    },
+    {
+      "id": "ai-beauty-analyzer",
+      "categories": ["mobile-apps", "ml-analytics"],
+      "addToProjectTree": true,
+      "project": "AI Beauty & Health Analysis App",
+      "client": "Beauty Tech Startup",
+      "metrics": [
+        { "value": "2", "label": "Weeks from concept to functional MVP" }
+      ],
+      "description": "Engineered a mobile-first AI application that delivers personalized beauty and health analysis using a custom ML pipeline, with LLM-powered product advice, affiliate integration, and science-backed recommendations.",
+      "technologies": [
+        "TypeScript", "Vue", "Ionic", "Capacitor", 
+        "PyTorch", "Neural Networks", "Computer Vision", 
+        "OpenAI", "RAG (Retrieval-Augmented Generation)"
+      ],
+      "challenge": "The client wanted to avoid yet another filter-based beauty app and instead build something real - an AI-powered platform rooted in scientific analysis. It needed to analyze user selfies, provide accurate health and beauty insights, and link each recommendation to meaningful research and monetized product suggestions. All of this had to run smoothly across mobile devices and feel engaging on social platforms.",
+      "solution": "We developed a cross-platform mobile app using Ionic, Capacitor, and Vue. A custom ML pipeline in PyTorch handles face detection, feature extraction, and scoring. The results are fed into a Retrieval-Augmented Generation (RAG) system powered by OpenAI to pair findings with scientifically supported product recommendations and generate a structured report. The app also integrates affiliate links for monetization, delivering both value and revenue from each analysis.",
+      "results": [
+        "Functional AI-powered MVP delivered in just 2 weeks",
+        "Cross-platform support with native performance on iOS, Android, and web",
+        "In-house ML ensemble pipeline for facial feature scoring and health indicators",
+        "RAG + OpenAI system for scientific product matching and personalized report generation",
+        "Affiliate integration for dynamic, monetized skincare and beauty suggestions"
+      ],
+      "testimonial": {
+        "quote": "This team delivered a real AI-powered app - not another filter gimmick. It analyzes you, tells you what's up, and actually helps. The affiliate integration was a brilliant bonus - it's already paying off.",
+        "author": "Co-Founder",
+        "company": "Beauty Tech Startup"
+      }
+    },
+
+    {
       "id": "telegram-chatbot",
-      "category": "integrations",
+      "categories": ["integrations"],
       "addToProjectTree": true,
       "project": "Telegram Chatbot for B2B Lead Generation",
       "client": "AI Diagnostics Company",
       "metrics": [
-        { "value": "1000+", "label": "Referrals" },
+        { "value": "Day 1", "label": "Profitable Leads" },
         { "value": "2", "label": "Weeks to MVP" }
       ],
       "description": "Built an end-to-end system for B2B lead generation with referral tracking and CRM integration",
       "technologies": ["Python", "Telegram API", "FastAPI", "PostgreSQL"],
-      "challenge": "A company with a complex AI-based diagnostics tool wanted to expand their B2B reach. Their goal was to let small businesses onboard easily, allow employees to generate referral codes, and enable end-users to access the diagnostics experience without needing to install an app — all while tracking leads and syncing with their CRM.",
-      "solution": "We built an end-to-end system that includes a user management platform, a Telegram bot replicating the diagnostics experience, and lead detection logic. The system integrates with their ML-powered diagnostics backend and CRM, enabling real-time lead attribution and automated payouts. End-users can access diagnostics, view results, and get updates — all within Telegram.",
+      "challenge": "A company with a complex AI-based diagnostics tool wanted to expand their B2B reach. Their goal was to let small businesses onboard easily, allow employees to generate referral codes, and enable end-users to access the diagnostics experience without needing to install an app - all while tracking leads and syncing with their CRM.",
+      "solution": "We built an end-to-end system that includes a user management platform, a Telegram bot replicating the diagnostics experience, and lead detection logic. The system integrates with their ML-powered diagnostics backend and CRM, enabling real-time lead attribution and automated payouts. End-users can access diagnostics, view results, and get updates - all within Telegram.",
       "results": [
         "MVP delivered in 2 weeks",
         "Go-to-market strategy validated within 1 month",
-        "1000+ referrals processed in the first weeks",
-        "24/7 diagnostics access — no app install needed",
+        "Generated profitable leads from day one of launch",
+        "24/7 diagnostics access - no app install needed",
         "Lower barrier to adoption in Telegram-heavy markets",
         "Fully automated, scalable lead generation with transparent attribution"
       ],
@@ -29,81 +87,8 @@
       }
     },
     {
-      "id": "api-gateway",
-      "category": "integrations",
-      "addToProjectTree": true,
-      "project": "API Gateway",
-      "client": "Enterprise Client",
-      "metrics": [
-        { "value": "40%", "label": "Latency Reduction" },
-        { "value": "100%", "label": "Service Coverage" }
-      ],
-      "description": "Developed a robust API gateway for microservices architecture",
-      "technologies": ["Go", "gRPC", "Redis", "Kubernetes"],
-      "challenge": "A client needed to manage multiple microservices with different authentication methods and rate limiting requirements.",
-      "solution": "We built a centralized API gateway that handles authentication, rate limiting, and request routing across all microservices.",
-      "results": [
-        "Unified authentication system",
-        "Improved security and monitoring",
-        "Reduced latency by 40%",
-        "Simplified service management"
-      ],
-      "testimonial": {
-        "quote": "The API gateway has streamlined our microservices architecture, making it easier to manage and secure our services.",
-        "author": "Technical Director",
-        "company": "Enterprise Client"
-      }
-    },
-    {
-      "id": "cross-platform-mvp",
-      "category": "mobile-apps",
-      "addToProjectTree": true,
-      "project": "Cross-platform MVP",
-      "client": "Startup",
-      "metrics": [
-        { "value": "2", "label": "Weeks to Launch" },
-        { "value": "100%", "label": "Code Reuse" }
-      ],
-      "description": "Launched a cross-platform mobile app in record time",
-      "technologies": ["Flutter", "Firebase", "REST API"],
-      "challenge": "A startup needed to quickly validate their product idea with a cross-platform mobile app while maintaining high performance.",
-      "solution": "We developed a Flutter-based MVP that delivered native performance across iOS and Android with a single codebase.",
-      "results": [
-        "2-week development cycle",
-        "Native performance on both platforms",
-        "Reduced maintenance costs",
-        "Faster time to market"
-      ]
-    },
-    {
-      "id": "fitness-tracking",
-      "category": "mobile-apps",
-      "addToProjectTree": true,
-      "project": "Fitness Tracking App",
-      "client": "Fitness Company",
-      "metrics": [
-        { "value": "4.8/5", "label": "App Store Rating" },
-        { "value": "50k+", "label": "Active Users" }
-      ],
-      "description": "Created a fitness tracking app with real-time analytics",
-      "technologies": ["React Native", "Node.js", "MongoDB", "WebSocket"],
-      "challenge": "A fitness company needed a mobile app that could track workouts, provide real-time feedback, and sync with various fitness devices.",
-      "solution": "We built a React Native app with native device integration, real-time tracking, and personalized workout recommendations.",
-      "results": [
-        "Seamless device integration",
-        "Real-time workout tracking",
-        "Personalized recommendations",
-        "Engaged user base"
-      ],
-      "testimonial": {
-        "quote": "The app has transformed how our users track their fitness journey, providing a seamless experience across devices.",
-        "author": "Product Director",
-        "company": "Fitness Company"
-      }
-    },
-    {
       "id": "llm-integration",
-      "category": "saas",
+      "categories": ["saas", "ml-analytics"],
       "addToProjectTree": true,
       "project": "LLM Integration SDK",
       "client": "Enterprise Clients",
@@ -126,85 +111,8 @@
         "author": "CTO",
         "company": "Enterprise Client"
       }
-    },
-    {
-      "id": "sales-forecasting",
-      "category": "saas",
-      "addToProjectTree": true,
-      "project": "Sales Forecasting",
-      "client": "Retail Chain",
-      "metrics": [
-        { "value": "47%", "label": "Prediction Accuracy" },
-        { "value": "23%", "label": "Cost Reduction" }
-      ],
-      "description": "Built an AI-powered sales forecasting system",
-      "technologies": ["Python", "TensorFlow", "FastAPI", "PostgreSQL"],
-      "challenge": "A retail chain needed accurate sales predictions to optimize inventory management and reduce costs.",
-      "solution": "We developed a machine learning model that analyzes historical data, seasonal trends, and external factors to predict sales.",
-      "results": [
-        "47% increase in prediction accuracy",
-        "23% reduction in inventory costs",
-        "Real-time updates",
-        "ROI within first quarter"
-      ],
-      "testimonial": {
-        "quote": "The forecasting system has significantly improved our inventory management and reduced costs across all stores.",
-        "author": "Operations Director",
-        "company": "Retail Chain"
-      }
-    },
-    {
-      "id": "predictive-analytics",
-      "category": "ml-analytics",
-      "addToProjectTree": true,
-      "project": "Predictive Analytics",
-      "client": "Business Intelligence Company",
-      "metrics": [
-        { "value": "85%", "label": "Prediction Accuracy" },
-        { "value": "100%", "label": "Automation" }
-      ],
-      "description": "Implemented predictive analytics for business intelligence",
-      "technologies": ["Python", "scikit-learn", "FastAPI", "React"],
-      "challenge": "A company needed to predict customer behavior and market trends to make data-driven decisions.",
-      "solution": "We built a comprehensive analytics system that combines multiple data sources and ML models to provide actionable insights.",
-      "results": [
-        "85% prediction accuracy",
-        "Automated reporting",
-        "Real-time insights",
-        "Data-driven decision making"
-      ],
-      "testimonial": {
-        "quote": "The predictive analytics system has transformed our decision-making process, providing accurate insights that drive business growth.",
-        "author": "Analytics Director",
-        "company": "Business Intelligence Company"
-      }
-    },
-    {
-      "id": "data-viz",
-      "category": "ml-analytics",
-      "addToProjectTree": true,
-      "project": "Data Visualization",
-      "client": "Data Analytics Company",
-      "metrics": [
-        { "value": "100%", "label": "Interactive" },
-        { "value": "50%", "label": "Time Saved" }
-      ],
-      "description": "Created interactive data visualization dashboards",
-      "technologies": ["React", "D3.js", "FastAPI", "PostgreSQL"],
-      "challenge": "A client needed to make complex data accessible and actionable for non-technical stakeholders.",
-      "solution": "We developed interactive dashboards with real-time data visualization and custom reporting features.",
-      "results": [
-        "Intuitive data exploration",
-        "Real-time updates",
-        "Custom reporting",
-        "Improved decision making"
-      ],
-      "testimonial": {
-        "quote": "The visualization dashboards have made our data accessible to everyone in the organization, leading to better-informed decisions.",
-        "author": "Data Director",
-        "company": "Data Analytics Company"
-      }
     }
+   
   ],
   "categories": {
     "integrations": "Integrations & Automation",

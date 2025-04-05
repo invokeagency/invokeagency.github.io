@@ -7,18 +7,18 @@
       "experts": [
         {
           "id": "frederik",
-          "expertise": "Certified Azure AI Engineer"
-        },
-        {
-          "id": "jacob",
-          "expertise": "Machine Learning & Data Science"
+          "expertise": "Experienced AI Engineer with a decade of experience in building scalable and performant AI systems"
         },
         {
           "id": "anton",
-          "expertise": "AI & Analytics"
+          "expertise": "Versatile Engineer with a passion for AI and a strong background in DevOps, MLOps and Cloud Engineering"
+        },
+        {
+          "id": "lasse",
+          "expertise": "Machine Learning Engineer specializing in deep learning, neural network optimization, and reinforcement learning with expertise in PyTorch and TensorFlow"
         }
       ],
-      "stories": ["telegram-chatbot", "api-gateway"]
+      "stories": ["ai-beauty-analyzer", "llm-integration"]
     },
     "integrations": {
       "title": "Integrations & Automation",
@@ -27,14 +27,18 @@
       "experts": [
         {
           "id": "frederik",
-          "expertise": "Enterprise Integration Specialist"
+          "expertise": "Experience in building integrations and automation solutions for enterprise clients in Cybersecurity, fintech and robotics"
         },
         {
           "id": "anton",
-          "expertise": "API & System Architecture"
+          "expertise": "Extensive experience designing API and system architectures, with a strong focus on automation, CI/CD pipelines, and cross-platform integration in industrial and high-performance environments"        
+        },
+        {
+          "id": "alberto",
+          "expertise": "Senior engineer with expertise in TypeScript, WebAssembly, and Prisma ORM integrations, specializing in high-performance systems and custom API development for logistics and warehouse automation"
         }
       ],
-      "stories": ["telegram-chatbot", "api-gateway"]
+      "stories": ["telegram-chatbot"]
     },
     "mobile-apps": {
       "title": "Mobile Apps",
@@ -42,15 +46,15 @@
       "icon": "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
       "experts": [
         {
-          "id": "iren",
-          "expertise": "Mobile Development Expert"
-        },
-        {
           "id": "anton",
           "expertise": "Cross-platform Specialist"
+        },
+        {
+          "id": "alberto",
+          "expertise": "Full-stack developer with extensive experience in TypeScript and WebAssembly to create high-performance cross-platform applications that work in modern runtimes and edge environments"
         }
       ],
-      "stories": ["cross-platform-mvp", "fitness-tracking"]
+      "stories": ["subliminal-meditation", "ai-beauty-analyzer"]
     },
     "saas": {
       "title": "SaaS Solutions",
@@ -62,11 +66,15 @@
           "expertise": "SaaS Architecture"
         },
         {
-          "id": "iren",
-          "expertise": "Full-stack Development"
+          "id": "anton",
+          "expertise": "DevOps specialist with focus on cloud infrastructure, CI/CD, and system integration for scalable SaaS applications"
+        },
+        {
+          "id": "alberto",
+          "expertise": "Prisma ORM contributor specializing in cloud-native SaaS development with TypeScript, WebAssembly, and modern JS runtimes like Cloudflare Workers and Vercel Edge"
         }
       ],
-      "stories": ["telegram-chatbot"]
+      "stories": ["telegram-chatbot", "llm-integration"]
     }
   }
 } 

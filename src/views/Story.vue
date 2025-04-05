@@ -3,6 +3,14 @@
     <div class="max-w-4xl mx-auto pt-24">
       <div v-if="story" class="space-y-8">
         <header class="space-y-4">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span 
+              v-for="category in story.categories" 
+              :key="category"
+              class="text-xs px-2 py-1 rounded-full bg-invoke-accent/10 text-invoke-accent">
+              {{ getCategory(category) }}
+            </span>
+          </div>
           <h1 class="text-4xl font-bold">{{ story.project }}</h1>
           <p class="text-xl text-invoke-accent">{{ story.client }}</p>
           <div class="flex flex-wrap gap-2">
@@ -81,12 +89,18 @@ export default {
   name: 'Story',
   data() {
     return {
-      stories: storiesData.stories
+      stories: storiesData.stories,
+      categories: storiesData.categories
     }
   },
   computed: {
     story() {
       return this.stories.find(story => story.id === this.$route.params.id)
+    }
+  },
+  methods: {
+    getCategory(categoryId) {
+      return this.categories[categoryId] || categoryId
     }
   }
 }

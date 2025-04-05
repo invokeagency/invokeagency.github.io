@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div v-for="member in members" 
+      <div v-for="(member, index) in members" 
            :key="member.id" 
            class="group relative bg-invoke-bg/40 backdrop-blur-sm rounded-2xl overflow-hidden border border-invoke-border/10 hover:border-invoke-accent/30 transition-all duration-300 flex flex-col">
         <!-- Background gradient effect -->
@@ -21,7 +21,7 @@
           </div>
 
           <div class="mt-4 flex-grow">
-            <div ref="bioContent" 
+            <div :ref="`bioContent${index}`" 
                  :class="['text-sm text-invoke-text/80', {'line-clamp-3': !member.expanded}]">
               {{ member.bio }}
             </div>
@@ -112,9 +112,13 @@ export default {
       member.expanded = !member.expanded
     },
     checkBioOverflow() {
-      this.$refs.bioContent.forEach((el, index) => {
-        const isOverflowing = el.scrollHeight > el.clientHeight
-        this.members[index].hasOverflow = isOverflowing
+      this.members.forEach((member, index) => {
+        const refName = `bioContent${index}`
+        if (this.$refs[refName] && this.$refs[refName][0]) {
+          const el = this.$refs[refName][0]
+          const isOverflowing = el.scrollHeight > el.clientHeight
+          this.members[index].hasOverflow = isOverflowing
+        }
       })
     }
   }

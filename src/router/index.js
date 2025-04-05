@@ -6,6 +6,8 @@ import Story from '../views/Story.vue'
 import Privacy from '../views/Privacy.vue'
 import Terms from '../views/Terms.vue'
 import Expertise from '../views/Expertise.vue'
+import Team from '../views/Team.vue'
+import About from '../views/About.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -44,6 +46,16 @@ const router = createRouter({
       path: '/expertise',
       name: 'expertise',
       component: Expertise
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component: Team
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
     }
   ]
 })

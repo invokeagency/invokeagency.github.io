@@ -47,10 +47,13 @@
           <div class="absolute inset-0 bg-gradient-to-br from-invoke-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           
           <div class="p-6 space-y-4 relative">
-            <!-- Category Badge -->
-            <div class="flex items-center gap-2">
-              <span class="text-xs px-2 py-1 rounded-full bg-invoke-accent/10 text-invoke-accent">
-                {{ categories[story.category] }}
+            <!-- Category Badges -->
+            <div class="flex flex-wrap items-center gap-2">
+              <span 
+                v-for="category in story.categories" 
+                :key="category"
+                class="text-xs px-2 py-1 rounded-full bg-invoke-accent/10 text-invoke-accent">
+                {{ categories[category] }}
               </span>
             </div>
 
@@ -134,7 +137,7 @@ export default {
   computed: {
     filteredStories() {
       if (!this.selectedCategory) return this.stories
-      return this.stories.filter(story => story.category === this.selectedCategory)
+      return this.stories.filter(story => story.categories.includes(this.selectedCategory))
     }
   }
 }
