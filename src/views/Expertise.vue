@@ -30,9 +30,9 @@
             <!-- Experts and Stories Grid -->
             <div class="grid grid-cols-2 gap-6 pt-6 border-t border-invoke-border/10">
               <!-- Experts Column -->
-              <div class="space-y-4">
+              <div :class="domain.stories.length === 0 ? 'space-y-4 col-span-2' : 'space-y-4'">
                 <h3 class="text-lg font-medium">{{ domain.experts.length === 1 ? 'Domain Expert' : 'Domain Experts' }}</h3>
-                <div class="space-y-4">
+                <div :class="domain.stories.length === 0 ? 'grid grid-cols-1 sm:grid-cols-2 gap-4' : 'space-y-4'">
                   <div v-for="expert in domain.experts" 
                        :key="expert.id"
                        class="flex items-start gap-3">
@@ -79,7 +79,7 @@
               </div>
 
               <!-- Stories Column -->
-              <div class="space-y-4">
+              <div v-if="domain.stories.length > 0" class="space-y-4">
                 <div class="flex items-center justify-between">
                   <h3 class="text-lg font-medium">{{ domain.stories.length === 1 ? 'Featured Story' : 'Featured Stories' }}</h3>
                 </div>

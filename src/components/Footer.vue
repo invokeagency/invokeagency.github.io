@@ -1,9 +1,9 @@
 <template>
   <footer class="border-t border-invoke-text/10 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 mt-8">
-      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <!-- Company Info -->
-        <div class="space-y-3 sm:space-y-4 col-span-2 sm:col-span-1">
+        <div class="space-y-3 sm:space-y-4">
           <h3 class="text-base sm:text-lg font-semibold">INVOKE</h3>
           <p class="text-xs sm:text-sm text-invoke-text/60">
             Fast builds. Flexible solutions. Expert execution.
@@ -55,29 +55,6 @@
             </a>
           </div>
         </div>
-
-        <!-- Newsletter -->
-        <div class="space-y-3 sm:space-y-4 col-span-2 sm:col-span-1">
-          <h3 class="text-base sm:text-lg font-semibold">Stay Updated</h3>
-          <p class="text-xs sm:text-sm text-invoke-text/60">
-            Get our latest insights and project updates.
-          </p>
-          <form @submit.prevent="handleSubscribe" class="space-y-2">
-            <input 
-              type="email" 
-              v-model="email" 
-              placeholder="Enter your email"
-              class="w-full px-3 sm:px-4 py-2 bg-invoke-text/5 border border-invoke-text/10 rounded-lg focus:outline-none focus:border-invoke-accent text-xs sm:text-sm"
-              required
-            >
-            <button 
-              type="submit"
-              class="w-full px-3 sm:px-4 py-2 bg-invoke-text/10 hover:bg-invoke-text/20 text-xs sm:text-sm rounded-lg transition-colors"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
       </div>
 
       <!-- Bottom Bar -->
@@ -96,18 +73,6 @@
 
 <script>
 export default {
-  name: 'Footer',
-  data() {
-    return {
-      email: ''
-    }
-  },
-  methods: {
-    handleSubscribe() {
-      // TODO: Implement newsletter subscription
-      console.log('Subscribe:', this.email)
-      this.email = ''
-    }
-  }
+  name: 'Footer'
 }
 </script> 
