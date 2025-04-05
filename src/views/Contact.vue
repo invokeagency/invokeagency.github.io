@@ -4,12 +4,12 @@
       <h1 class="text-4xl font-bold mb-2">Let's Build Together</h1>
       <p class="text-invoke-accent mb-12">Tell us about your project and we'll get back to you within 24 hours.</p>
 
-      <form action="https://formsubmit.co/frederikgramkortegaard@gmail.com" method="POST" class="space-y-6">
+      <form action="https://formsubmit.co/4b0c674fa323ea825a5eb3e49c75d385" method="POST" class="space-y-6">
         <!-- FormSubmit configuration -->
         <input type="hidden" name="_subject" value="New contact from INVOKE website">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://oneinvoke.com/thanks">
+        <input type="hidden" name="_next" value="https://invokeagency.github.io/thanks">
         
         <div class="space-y-4">
           <div>

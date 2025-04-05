@@ -89,7 +89,7 @@
                          class="block">
                         <template v-if="currentTestimonial.image && !imageLoadError">
                           <img 
-                            :src="'/src/assets/images/' + currentTestimonial.image" 
+                            :src="'/src/assets/images/testemonials/' + currentTestimonial.image" 
                             :alt="currentTestimonial.author"
                             class="w-full h-full object-cover hover:opacity-90 transition-opacity"
                             @error="handleImageError"
@@ -102,7 +102,7 @@
                       <template v-else>
                         <template v-if="currentTestimonial.image && !imageLoadError">
                           <img 
-                            :src="'/src/assets/images/' + currentTestimonial.image" 
+                            :src="'/src/assets/images/testemonials/' + currentTestimonial.image" 
                             :alt="currentTestimonial.author"
                             class="w-full h-full object-cover"
                             @error="handleImageError"
