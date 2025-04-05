@@ -89,7 +89,7 @@
                          class="block">
                         <template v-if="currentTestimonial.image && !imageLoadError">
                           <img 
-                            :src="'/src/assets/images/testemonials/' + currentTestimonial.image" 
+                            :src="getTestimonialImage(currentTestimonial.image)" 
                             :alt="currentTestimonial.author"
                             class="w-full h-full object-cover hover:opacity-90 transition-opacity"
                             @error="handleImageError"
@@ -102,7 +102,7 @@
                       <template v-else>
                         <template v-if="currentTestimonial.image && !imageLoadError">
                           <img 
-                            :src="'/src/assets/images/testemonials/' + currentTestimonial.image" 
+                            :src="getTestimonialImage(currentTestimonial.image)" 
                             :alt="currentTestimonial.author"
                             class="w-full h-full object-cover"
                             @error="handleImageError"
@@ -196,6 +196,15 @@ export default {
     },
     handleImageError(event) {
       this.imageLoadError = true
+    },
+    getTestimonialImage(imageName) {
+      // More dynamic approach
+      try {
+        return new URL(`../assets/images/testemonials/${imageName}`, import.meta.url).href
+      } catch (error) {
+        console.error('Error loading image:', error)
+        return ''
+      }
     }
   },
   mounted() {

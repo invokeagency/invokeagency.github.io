@@ -9,7 +9,7 @@
         <input type="hidden" name="_subject" value="New contact from INVOKE website">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://invokeagency.github.io/thanks">
+        <input type="hidden" name="_next" value="https://invokeagency.github.io/#/thanks">
         
         <div class="space-y-4">
           <div>
