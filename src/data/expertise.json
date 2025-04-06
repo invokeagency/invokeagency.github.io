@@ -18,7 +18,7 @@
           "expertise": "Machine Learning Engineer specializing in deep learning, neural network optimization, and reinforcement learning with expertise in PyTorch and TensorFlow"
         }
       ],
-      "stories": ["ai-beauty-analyzer", "llm-integration"]
+      "stories": ["ai-beauty-analyzer", "llm-integration", "cybersecurity-platform"]
     },
     "integrations": {
       "title": "Integrations & Automation",
@@ -38,7 +38,7 @@
           "expertise": "Senior engineer with expertise in TypeScript, WebAssembly, and Prisma ORM integrations, specializing in high-performance systems and custom API development for logistics and warehouse automation"
         }
       ],
-      "stories": ["telegram-chatbot", "llm-integration"]
+      "stories": ["telegram-chatbot", "llm-integration", "cybersecurity-platform"]
     },
     "mobile-apps": {
       "title": "Mobile Apps",
@@ -74,7 +74,7 @@
           "expertise": "Prisma ORM contributor specializing in cloud-native SaaS development with TypeScript, WebAssembly, and modern JS runtimes like Cloudflare Workers and Vercel Edge"
         }
       ],
-      "stories": []
+      "stories": ["cybersecurity-platform"]
     }
   }
 } 
