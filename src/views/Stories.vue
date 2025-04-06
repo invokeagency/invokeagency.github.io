@@ -71,6 +71,7 @@
             <div v-if="story.metrics" class="grid grid-cols-2 gap-3 pt-2">
               <div v-for="metric in story.metrics.slice(0, 2)" 
                    :key="metric.label"
+                   :class="story.metrics.length === 1 ? 'col-span-2' : ''"
                    class="bg-invoke-bg/60 rounded-lg p-2 text-center">
                 <div class="text-sm font-medium text-invoke-accent">{{ metric.value }}</div>
                 <div class="text-xs text-invoke-text/60">{{ metric.label }}</div>
@@ -136,8 +137,17 @@ export default {
   },
   computed: {
     filteredStories() {
-      if (!this.selectedCategory) return this.stories
-      return this.stories.filter(story => story.categories.includes(this.selectedCategory))
+      let stories = this.selectedCategory 
+        ? this.stories.filter(story => story.categories.includes(this.selectedCategory))
+        : this.stories;
+      
+      // Sort by priority (lower numbers first)
+      return stories.sort((a, b) => {
+        // Default priority to 999 if not set
+        const priorityA = a.priority !== undefined ? a.priority : 999;
+        const priorityB = b.priority !== undefined ? b.priority : 999;
+        return priorityA - priorityB;
+      });
     }
   }
 }

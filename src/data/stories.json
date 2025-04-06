@@ -4,10 +4,11 @@
       "id": "subliminal-meditation",
       "categories": ["mobile-apps"],
       "addToProjectTree": true,
+      "priority": 4,
       "project": "Subliminal Meditation App",
       "client": "Wellness Innovation Company",
       "metrics": [
-        { "value": "1", "label": "Week from idea to launch" }
+        { "value": "1", "label": "Week from Idea to Launch" }
       ],
       "description": "Developed a Flutter-based meditation application delivering personalized subliminal and ambient experiences with AI-generated affirmations",
       "technologies": ["Flutter", "Dart", "OpenAI"],
@@ -31,10 +32,11 @@
       "id": "ai-beauty-analyzer",
       "categories": ["mobile-apps", "ml-analytics"],
       "addToProjectTree": true,
+      "priority": 3,
       "project": "AI Beauty & Health Analysis App",
       "client": "Beauty Tech Startup",
       "metrics": [
-        { "value": "2", "label": "Weeks from concept to functional MVP" }
+        { "value": "2", "label": "Weeks from Concept to MVP" }
       ],
       "description": "Engineered a mobile-first AI application that delivers personalized beauty and health analysis using a custom ML pipeline, with LLM-powered product advice, affiliate integration, and science-backed recommendations.",
       "technologies": [
@@ -52,11 +54,11 @@
         "Affiliate integration for dynamic, monetized skincare and beauty suggestions"
       ]
     },
-
     {
       "id": "telegram-chatbot",
       "categories": ["integrations"],
       "addToProjectTree": true,
+      "priority": 2,
       "project": "Telegram Chatbot for B2B Lead Generation",
       "client": "AI Diagnostics Company",
       "metrics": [
@@ -85,6 +87,7 @@
       "id": "llm-integration",
       "categories": ["integrations", "ml-analytics"],
       "addToProjectTree": true,
+      "priority": 5,
       "project": "LLM Integration SDK",
       "client": "Enterprise Clients",
       "metrics": [
@@ -100,26 +103,21 @@
         "Enterprise-grade security",
         "Multiple LLM support",
         "Detailed analytics"
-      ],
-      "testimonial": {
-        "quote": "The SDK has made it incredibly easy to integrate LLMs into our enterprise applications while maintaining the highest security standards.",
-        "author": "CTO",
-        "company": "Enterprise Client"
-      }
+      ]
     },
     {
       "id": "cybersecurity-platform",
       "categories": ["ml-analytics", "integrations", "saas"],
       "addToProjectTree": true,
+      "priority": 1,
       "project": "AI-Powered Cybersecurity Reporting Platform",
       "client": "Enterprise Security Firm",
       "metrics": [
-        { "value": "3", "label": "Weeks to MVP" },
-        { "value": "8", "label": "Enterprise Clients Onboarded" }
+        { "value": "3", "label": "Weeks from Concept to Production" }
       ],
       "description": "Built an automated cybersecurity reporting platform using OpenAI and LLM frameworks to generate structured reports from raw data, with privacy-focused data sanitization and integrations with Jira and Microsoft Sentinel, delivered as a SaaS solution",
       "technologies": ["Python", "OpenAI API", "FastAPI", "Docker", "PostgreSQL", "Redis", "Jira API", "Microsoft Sentinel", "Kubernetes", "Azure", "RAG (Retrieval-Augmented Generation)"],
-      "challenge": "A leading cybersecurity firm was spending excessive time manually generating compliance and incident reports from large volumes of raw technical data. They needed an automated solution that could produce human-readable, actionable reports while prioritizing data privacy, integrating with their ticketing system, and leveraging threat intelligence from Microsoft Sentinel. The solution needed to be delivered as a scalable SaaS platform accessible to their enterprise clients.",
+      "challenge": "A leading SaaS company wanted to enhance their product chain by offering an automated cybersecurity reporting solution to their enterprise clients. They needed a solution that could produce human-readable, actionable reports while prioritizing data privacy, integrating with their ticketing system, and leveraging threat intelligence from Microsoft Sentinel. We built this feature and integrated it directly into their existing SaaS platform to provide seamless functionality as part of their product offering.",
       "solution": "We developed a cloud-native SaaS platform in Python that utilizes OpenAI's GPT models and custom LLM frameworks to transform complex security logs and scan results into structured, actionable reports. The system incorporates a sophisticated data sanitization layer that automatically identifies and handles PII/sensitive data according to privacy best practices. We built native integrations with Jira to retrieve relevant tickets in a RAG-like fashion for context, and with Microsoft Sentinel for threat intelligence, creating a seamless workflow from threat detection to comprehensive report generation. The solution was deployed on Azure using Kubernetes for scalability and multi-tenant isolation.",
       "results": [
         "Significant reduction in manual reporting workload",
