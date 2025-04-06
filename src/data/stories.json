@@ -78,11 +78,6 @@
         "Lower barrier to adoption in Telegram-heavy markets",
         "Fully automated, scalable lead generation with transparent attribution"
       ],
-      "testimonial": {
-        "quote": "The Telegram bot has revolutionized how we reach and serve our B2B customers, making our diagnostics tool accessible to a whole new market segment.",
-        "author": "Product Manager",
-        "company": "AI Diagnostics Company"
-      },
       "treeOrder": {
         "integrations": 1
       }
