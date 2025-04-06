@@ -50,12 +50,7 @@
         "In-house ML ensemble pipeline for facial feature scoring and health indicators",
         "RAG + OpenAI system for scientific product matching and personalized report generation",
         "Affiliate integration for dynamic, monetized skincare and beauty suggestions"
-      ],
-      "testimonial": {
-        "quote": "This team delivered a real AI-powered app - not another filter gimmick. It analyzes you, tells you what's up, and actually helps. The affiliate integration was a brilliant bonus - it's already paying off.",
-        "author": "Co-Founder",
-        "company": "Beauty Tech Startup"
-      }
+      ]
     },
 
     {
