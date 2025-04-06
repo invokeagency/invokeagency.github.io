@@ -15,10 +15,7 @@
             that waste months of development time. So we built a better way.
           </p>
           <p class="text-lg text-invoke-text/80">
-            Our team brings together expertise in AI engineering, data science, and product development. 
-            We build impactful products for startups and growing businesses. That includes custom LLM 
-            Integration SDKs, advanced AI with Langchain and LangGraph, and scalable solutions on 
-            Kubernetes and Azure. We're both engineers and product people - focused on delivering real value.
+            Our team brings together technical expertise and business insight to create solutions that matter. We focus on what drives real value - not buzzwords or over-engineered complexity. By understanding your business goals first, we build exactly what you need: powerful, efficient, and scalable systems. Our approach cuts through the usual tech noise to deliver meaningful results on accelerated timelines. We operate at the intersection of technical excellence and commercial impact - where code meets ROI.
           </p>
         </div>
 
