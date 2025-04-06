@@ -84,7 +84,7 @@
                   <h3 class="text-lg font-medium">{{ domain.stories.length === 1 ? 'Featured Story' : 'Featured Stories' }}</h3>
                 </div>
                 <div class="space-y-6">
-                  <div v-for="storyId in domain.stories.slice(0, 2)" 
+                  <div v-for="storyId in prioritizedStoriesByDomain[key]" 
                        :key="storyId"
                        class="space-y-2">
                     <div class="flex items-center gap-2">
@@ -102,8 +102,8 @@
                       </svg>
                     </router-link>
                   </div>
-                  <div v-if="domain.stories.length > 2" class="text-sm text-invoke-accent">
-                    +{{ domain.stories.length - 2 }} more stories
+                  <div v-if="domain.stories.length > 3" class="text-sm text-invoke-accent">
+                    +{{ domain.stories.length - 3 }} more stories
                   </div>
                 </div>
               </div>
@@ -203,6 +203,41 @@ export default {
           })
         }
       })
+    }
+  },
+  computed: {
+    // Calculate how many domains each story appears in
+    storyDomainCount() {
+      const counts = {};
+      
+      // Count how many domains each story appears in
+      Object.values(this.domains).forEach(domain => {
+        domain.stories.forEach(storyId => {
+          if (!counts[storyId]) {
+            counts[storyId] = 0;
+          }
+          counts[storyId]++;
+        });
+      });
+      
+      return counts;
+    },
+    
+    // Get prioritized stories for each domain (max 3, prioritizing unique stories)
+    prioritizedStoriesByDomain() {
+      const result = {};
+      
+      Object.entries(this.domains).forEach(([domainId, domain]) => {
+        // Sort stories by how many domains they appear in (ascending)
+        const sortedStories = [...domain.stories].sort((a, b) => 
+          (this.storyDomainCount[a] || 0) - (this.storyDomainCount[b] || 0)
+        );
+        
+        // Limit to max 3 stories
+        result[domainId] = sortedStories.slice(0, 3);
+      });
+      
+      return result;
     }
   }
 }

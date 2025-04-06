@@ -90,17 +90,57 @@
 
 <script>
 import teamData from '../data/team.json'
+import albertoImage from '../assets/images/team/alberto.jpg'
+import antonImage from '../assets/images/team/anton.png'
+import lasseImage from '../assets/images/team/lasse.jpg'
 
 export default {
   name: 'Team',
   data() {
+    // Define the desired order
+    const memberOrder = ['frederik', 'iren', 'alberto', 'lasse', 'anton'];
+    
+    // Create the members array with local images
+    const membersMap = Object.entries(teamData.members).reduce((acc, [id, member]) => {
+      // Add local images for specific members
+      if (id === 'alberto') {
+        acc[id] = {
+          ...member,
+          id,
+          expanded: false,
+          image: albertoImage
+        };
+      }
+      else if (id === 'anton') {
+        acc[id] = {
+          ...member,
+          id,
+          expanded: false,
+          image: antonImage
+        };
+      }
+      else if (id === 'lasse') {
+        acc[id] = {
+          ...member,
+          id,
+          expanded: false,
+          image: lasseImage
+        };
+      }
+      else {
+        acc[id] = {
+          ...member,
+          id,
+          expanded: false
+        };
+      }
+      return acc;
+    }, {});
+    
+    // Sort the members according to the desired order
     return {
-      members: Object.entries(teamData.members).map(([id, member]) => ({
-        ...member,
-        id,
-        expanded: false
-      }))
-    }
+      members: memberOrder.map(id => membersMap[id])
+    };
   },
   mounted() {
     // No need for resize handler or overflow check
