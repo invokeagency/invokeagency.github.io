@@ -58,8 +58,10 @@ export default {
         .filter(story => story.categories && story.categories.includes(categoryId) && story.addToProjectTree)
         .map(story => ({
           id: story.id,
-          project: story.project
+          project: story.project,
+          order: story.treeOrder && story.treeOrder[categoryId] ? story.treeOrder[categoryId] : 999
         }))
+        .sort((a, b) => a.order - b.order)
     },
     navigateToStory(storyId) {
       this.$router.push(`/stories/${storyId}`)

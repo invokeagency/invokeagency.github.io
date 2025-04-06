@@ -26,6 +26,9 @@
         "quote": "The Subliminal Meditation App transformed our concept into a polished, feature-rich experience that our users love. The AI-generated affirmations provide a uniquely personal touch that sets us apart in the crowded wellness space.",
         "author": "Product Director",
         "company": "Wellness Innovation Company"
+      },
+      "treeOrder": {
+        "mobile-apps": 1
       }
     },
     {
@@ -52,7 +55,11 @@
         "In-house ML ensemble pipeline for facial feature scoring and health indicators",
         "RAG + OpenAI system for scientific product matching and personalized report generation",
         "Affiliate integration for dynamic, monetized skincare and beauty suggestions"
-      ]
+      ],
+      "treeOrder": {
+        "mobile-apps": 2,
+        "ml-analytics": 3
+      }
     },
     {
       "id": "telegram-chatbot",
@@ -81,6 +88,9 @@
         "quote": "The Telegram bot has revolutionized how we reach and serve our B2B customers, making our diagnostics tool accessible to a whole new market segment.",
         "author": "Product Manager",
         "company": "AI Diagnostics Company"
+      },
+      "treeOrder": {
+        "integrations": 1
       }
     },
     {
@@ -103,7 +113,11 @@
         "Enterprise-grade security",
         "Multiple LLM support",
         "Detailed analytics"
-      ]
+      ],
+      "treeOrder": {
+        "integrations": 3,
+        "ml-analytics": 3
+      }
     },
     {
       "id": "cybersecurity-platform",
@@ -129,7 +143,12 @@
         "End-to-end pipeline from raw security data to executive-ready reports",
         "Multi-tenant SaaS architecture supporting concurrent client reporting",
         "Subscription-based revenue model with consistent month-over-month growth"
-      ]
+      ],
+      "treeOrder": {
+        "ml-analytics": 2,
+        "integrations": 2,
+        "saas": 1
+      }
     }
   ],
   "categories": {
