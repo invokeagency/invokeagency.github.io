@@ -6,7 +6,7 @@
       "addToProjectTree": true,
       "priority": 4,
       "project": "Subliminal Meditation App",
-      "client": "Wellness Innovation Company",
+      "client": "",
       "metrics": [
         { "value": "1", "label": "Week from Idea to Launch" }
       ],
@@ -19,14 +19,8 @@
         "Cross-platform support across iOS, Android, and web",
         "AI-generated daily affirmations using OpenAI integration",
         "Seamless audio mixing with the Just Audio library",
-        "Offline mode with intelligent caching of audio and quotes",
-        "99% user retention after initial 7-day trial period"
+        "Offline mode with intelligent caching of audio and quotes"
       ],
-      "testimonial": {
-        "quote": "The Subliminal Meditation App transformed our concept into a polished, feature-rich experience that our users love. The AI-generated affirmations provide a uniquely personal touch that sets us apart in the crowded wellness space.",
-        "author": "Product Director",
-        "company": "Wellness Innovation Company"
-      },
       "treeOrder": {
         "mobile-apps": 1
       }
@@ -99,20 +93,20 @@
       "addToProjectTree": true,
       "priority": 5,
       "project": "LLM Integration SDK",
-      "client": "Enterprise Clients",
+      "client": "Enterprise Technology Firm",
       "metrics": [
-        { "value": "90%", "label": "Integration Time Reduction" },
-        { "value": "100%", "label": "Security Compliance" }
+        { "value": "Significant", "label": "Integration Time Reduction" },
+        { "value": "Enhanced", "label": "Security & Auth Handling" }
       ],
-      "description": "Created a flexible SDK for enterprise LLM integration",
+      "description": "Created a templateable, reusable LLM integration Python SDK for a singular enterprise company and internal use",
       "technologies": ["Python", "OpenAI API", "FastAPI", "Docker"],
-      "challenge": "Multiple enterprise clients needed to integrate LLMs into their existing workflows but were struggling with security and implementation complexity.",
-      "solution": "We developed a flexible SDK that handles authentication, rate limiting, prompt management, and model switching.",
+      "challenge": "An enterprise client needed to integrate LLMs into their existing internal workflows but was struggling with security, authentication handling, and implementation complexity across different teams.",
+      "solution": "We developed a templateable, reusable Python SDK specifically for their internal use that handles authentication, security protocols, and standardized integration patterns.",
       "results": [
-        "90% reduction in integration time",
-        "Enterprise-grade security",
-        "Multiple LLM support",
-        "Detailed analytics"
+        "Significant reduction in integration time for internal teams",
+        "Enhanced security and authentication handling",
+        "Standardized LLM implementation across departments",
+        "Simplified internal adoption"
       ],
       "treeOrder": {
         "integrations": 3,
