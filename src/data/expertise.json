@@ -7,15 +7,15 @@
       "experts": [
         {
           "id": "frederik",
-          "expertise": "Experienced AI Engineer with a decade of experience in building scalable and performant AI systems"
-        },
-        {
-          "id": "anton",
-          "expertise": "Versatile Engineer with a passion for AI and a strong background in DevOps, MLOps and Cloud Engineering"
+          "expertise": "AI Engineer with 10+ years experience"
         },
         {
           "id": "lasse",
-          "expertise": "Machine Learning Engineer specializing in deep learning, neural network optimization, and reinforcement learning with expertise in PyTorch and TensorFlow"
+          "expertise": "ML Engineer specializing in deep learning and neural networks"
+        },
+        {
+          "id": "anton",
+          "expertise": "AI Engineer with MLOps and Cloud expertise"
         }
       ],
       "stories": ["ai-beauty-analyzer", "llm-integration", "cybersecurity-platform"]
@@ -27,15 +27,15 @@
       "experts": [
         {
           "id": "frederik",
-          "expertise": "Experience in building integrations and automation solutions for enterprise clients in Cybersecurity, fintech and robotics"
+          "expertise": "Proven track record of building integrations for enterprise clients in industries such as fintech and cyber security"
         },
         {
           "id": "anton",
-          "expertise": "Extensive experience designing API and system architectures, with a strong focus on automation, CI/CD pipelines, and cross-platform integration in industrial and high-performance environments"        
+          "expertise": "Designs robust APIs that power industrial automation"
         },
         {
           "id": "alberto",
-          "expertise": "Senior engineer with expertise in TypeScript, WebAssembly, and Prisma ORM integrations, specializing in high-performance systems and custom API development for logistics and warehouse automation"
+          "expertise": "Crafts lightning-fast TypeScript, WebAssembly, and Prisma ORM integrations"
         }
       ],
       "stories": ["telegram-chatbot", "llm-integration", "cybersecurity-platform"]
@@ -51,7 +51,7 @@
         },
         {
           "id": "alberto",
-          "expertise": "Full-stack developer with extensive experience in TypeScript and WebAssembly to create high-performance cross-platform applications that work in modern runtimes and edge environments"
+          "expertise": "Full-stack TypeScript developer for cross-platform apps"
         }
       ],
       "stories": ["subliminal-meditation", "ai-beauty-analyzer"]
@@ -67,11 +67,11 @@
         },
         {
           "id": "anton",
-          "expertise": "DevOps specialist with focus on cloud infrastructure, CI/CD, and system integration for scalable SaaS applications"
+          "expertise": "DevOps specialist for cloud infrastructure"
         },
         {
           "id": "alberto",
-          "expertise": "Prisma ORM contributor specializing in cloud-native SaaS development with TypeScript, WebAssembly, and modern JS runtimes like Cloudflare Workers and Vercel Edge"
+          "expertise": "Specializes in multi-tenant SaaS platforms with serverless architecture"
         }
       ],
       "stories": ["cybersecurity-platform"]

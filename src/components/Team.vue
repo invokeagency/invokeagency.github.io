@@ -91,6 +91,7 @@
 <script>
 import teamData from '../data/team.json'
 import albertoImage from '../assets/images/team/alberto.jpg'
+import antonImage from '../assets/images/team/anton.png'
 import lasseImage from '../assets/images/team/lasse.jpg'
 
 export default {
@@ -108,6 +109,14 @@ export default {
           id,
           expanded: false,
           image: albertoImage
+        };
+      }
+      else if (id === 'anton') {
+        acc[id] = {
+          ...member,
+          id,
+          expanded: false,
+          image: antonImage
         };
       }
       else if (id === 'lasse') {
