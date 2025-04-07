@@ -35,12 +35,12 @@
                 <div :class="domain.stories.length === 0 ? 'grid grid-cols-1 sm:grid-cols-2 gap-4' : 'space-y-4'">
                   <div v-for="expert in domain.experts" 
                        :key="expert.id"
-                       class="flex items-start gap-3">
+                       class="flex items-start gap-3 group">
                     <div class="w-10 h-10 rounded-full bg-invoke-accent/10 overflow-hidden flex-shrink-0">
                       <img v-if="getTeamMember(expert.id).image"
                            :src="getTeamMember(expert.id).image"
                            :alt="getTeamMember(expert.id).name"
-                           class="w-full h-full object-cover"
+                           class="w-full h-full object-cover team-image"
                            @error="handleImageError($event, expert.id)">
                       <div v-else 
                            class="w-full h-full flex items-center justify-center text-invoke-accent text-sm">
@@ -133,13 +133,46 @@
 import expertiseData from '../data/expertise.json'
 import teamData from '../data/team.json'
 import storiesData from '../data/stories.json'
+import albertoImage from '../assets/images/team/alberto.jpg'
+import antonImage from '../assets/images/team/anton.png'
+import lasseImage from '../assets/images/team/lasse.jpg'
+import lucasImage from '../assets/images/team/lucas.jpg'
+import frederikImage from '../assets/images/team/frederik.png'
+import irenImage from '../assets/images/team/iren.jpg'
 
 export default {
   name: 'Expertise',
   data() {
+    // Process team members to use local images
+    const processedTeamMembers = Object.entries(teamData.members).reduce((acc, [id, member]) => {
+      // Add local images for specific members
+      if (id === 'alberto') {
+        acc[id] = { ...member, image: albertoImage };
+      }
+      else if (id === 'anton') {
+        acc[id] = { ...member, image: antonImage };
+      }
+      else if (id === 'lasse') {
+        acc[id] = { ...member, image: lasseImage };
+      }
+      else if (id === 'lucas') {
+        acc[id] = { ...member, image: lucasImage };
+      }
+      else if (id === 'frederik') {
+        acc[id] = { ...member, image: frederikImage };
+      }
+      else if (id === 'iren') {
+        acc[id] = { ...member, image: irenImage };
+      }
+      else {
+        acc[id] = { ...member };
+      }
+      return acc;
+    }, {});
+    
     return {
       domains: expertiseData.domains,
-      teamMembers: teamData.members,
+      teamMembers: processedTeamMembers,
       stories: Object.values(storiesData.stories),
       imageErrors: new Set()
     }
@@ -256,5 +289,14 @@ export default {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.team-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.group:hover .team-image {
+  filter: grayscale(0%);
 }
 </style> 

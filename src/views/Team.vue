@@ -4,7 +4,7 @@
       <!-- Header -->
       <header class="space-y-4">
         <h1 class="text-4xl font-bold">Our Team</h1>
-        <p class="text-xl text-invoke-accent">Your on-demand product team of engineers focused on delivering real value</p>
+        <p class="text-xl text-invoke-accent">A collective of independent engineers who unite to transform ideas into launched products</p>
       </header>
 
       <!-- Team Component -->

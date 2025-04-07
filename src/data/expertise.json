@@ -16,6 +16,10 @@
         {
           "id": "anton",
           "expertise": "AI Engineer with MLOps and Cloud expertise"
+        },
+        {
+          "id": "lucas",
+          "expertise": "Experienced in machine learning and signal processing systems"
         }
       ],
       "stories": ["ai-beauty-analyzer", "llm-integration", "cybersecurity-platform"]
@@ -31,11 +35,11 @@
         },
         {
           "id": "anton",
-          "expertise": "Designs robust APIs that power industrial automation"
+          "expertise": "Experienced in designing robust APIs that power industrial automation"
         },
         {
           "id": "alberto",
-          "expertise": "Crafts lightning-fast TypeScript, WebAssembly, and Prisma ORM integrations"
+          "expertise": "Proficient with lightning-fast TypeScript, WebAssembly, and Prisma ORM integrations"
         }
       ],
       "stories": ["telegram-chatbot", "llm-integration", "cybersecurity-platform"]
@@ -47,11 +51,15 @@
       "experts": [
         {
           "id": "anton",
-          "expertise": "Cross-platform Specialist"
+          "expertise": "Experienced in cross-platform development"
         },
         {
           "id": "alberto",
           "expertise": "Full-stack TypeScript developer for cross-platform apps"
+        },
+        {
+          "id": "lucas",
+          "expertise": "Interactive designer with expertise in Unity and WebGL applications"
         }
       ],
       "stories": ["subliminal-meditation", "ai-beauty-analyzer"]
@@ -63,7 +71,7 @@
       "experts": [
         {
           "id": "frederik",
-          "expertise": "SaaS Architecture"
+          "expertise": "Experienced in SaaS Architecture"
         },
         {
           "id": "iren",
@@ -71,11 +79,11 @@
         },
         {
           "id": "anton",
-          "expertise": "DevOps specialist for cloud infrastructure"
+          "expertise": "DevOps expert for cloud infrastructure"
         },
         {
           "id": "alberto",
-          "expertise": "Specializes in multi-tenant SaaS platforms with serverless architecture"
+          "expertise": "Experienced with multi-tenant SaaS platforms and serverless architecture"
         }
       ],
       "stories": ["cybersecurity-platform"]

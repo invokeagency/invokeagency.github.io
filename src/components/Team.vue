@@ -11,7 +11,7 @@
           <img :src="member.image" 
                :alt="member.name"
                @error="handleImageError"
-               class="w-full h-full object-cover" />
+               class="w-full h-full object-cover team-image" />
         </div>
         
         <div class="p-6 flex flex-col flex-grow relative z-10">
@@ -93,54 +93,41 @@ import teamData from '../data/team.json'
 import albertoImage from '../assets/images/team/alberto.jpg'
 import antonImage from '../assets/images/team/anton.png'
 import lasseImage from '../assets/images/team/lasse.jpg'
+import lucasImage from '../assets/images/team/lucas.jpg'
+import frederikImage from '../assets/images/team/frederik.png'
+import irenImage from '../assets/images/team/iren.jpg'
 
 export default {
   name: 'Team',
   data() {
-    // Define the desired order
-    const memberOrder = ['frederik', 'iren', 'alberto', 'lasse', 'anton'];
+    // Define the order of team members
+    const memberOrder = ['frederik', 'iren', 'alberto', 'lasse', 'anton', 'lucas'];
     
-    // Create the members array with local images
+    // Create a mapping of member IDs to their local images
+    const memberImages = {
+      alberto: albertoImage,
+      anton: antonImage,
+      lasse: lasseImage,
+      lucas: lucasImage,
+      frederik: frederikImage,
+      iren: irenImage
+    };
+    
+    // Create a map of all members with local images for specific members
     const membersMap = Object.entries(teamData.members).reduce((acc, [id, member]) => {
-      // Add local images for specific members
-      if (id === 'alberto') {
-        acc[id] = {
-          ...member,
-          id,
-          expanded: false,
-          image: albertoImage
-        };
-      }
-      else if (id === 'anton') {
-        acc[id] = {
-          ...member,
-          id,
-          expanded: false,
-          image: antonImage
-        };
-      }
-      else if (id === 'lasse') {
-        acc[id] = {
-          ...member,
-          id,
-          expanded: false,
-          image: lasseImage
-        };
-      }
-      else {
-        acc[id] = {
-          ...member,
-          id,
-          expanded: false
-        };
-      }
+      acc[id] = {
+        ...member,
+        id,
+        image: memberImages[id] || member.image,
+        expanded: false
+      };
       return acc;
     }, {});
     
-    // Sort the members according to the desired order
+    // Return members in the specified order
     return {
-      members: memberOrder.map(id => membersMap[id])
-    };
+      members: memberOrder.map(id => membersMap[id] || { ...teamData.members[id], id, expanded: false })
+    }
   },
   mounted() {
     // No need for resize handler or overflow check
@@ -156,18 +143,13 @@ export default {
       e.target.src = '/images/placeholder-profile.jpg'
     },
     toggleBio(member) {
-      // Find the index of the member in the array
-      const index = this.members.findIndex(m => m.id === member.id)
+      const index = this.members.findIndex(m => m.id === member.id);
       if (index !== -1) {
-        console.log("Toggling bio, current state:", member.expanded)
-        
-        // In Vue 3, directly modify the array is reactive
-        this.members[index] = {
-          ...member,
-          expanded: !member.expanded
-        }
-        
-        console.log("New state:", this.members[index].expanded)
+        this.members = [
+          ...this.members.slice(0, index),
+          { ...this.members[index], expanded: !this.members[index].expanded },
+          ...this.members.slice(index + 1)
+        ];
       }
     }
   }
@@ -180,5 +162,15 @@ export default {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.team-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+/* Optional: add hover effect to restore color */
+.group:hover .team-image {
+  filter: grayscale(0%);
 }
 </style> 

@@ -2,7 +2,7 @@
     "members": {
         "frederik": {
             "name": "Frederik Gram",
-            "role": "Founder & CEO",
+            "role": "Founder & Lead Engineer",
             "image": "https://i.pravatar.cc/150?img=1",
             "bio": "Frederik Gram Kortegaard is a versatile software engineer and AI specialist with a strong track record of building scalable systems, intelligent pipelines, and high-performance APIs. With experience spanning cybersecurity, cloud AI engineering, and research-driven deep learning, he combines hands-on engineering with cutting-edge machine learning to solve real-world problems. Frederik founded Invoke to help businesses move faster and smarter by delivering production-ready technology with startup speed and enterprise-grade quality.",
             "skills": [
@@ -81,6 +81,23 @@
             ],
             "linkedin": "https://www.linkedin.com/in/alberto-schiabel/",
             "github": "https://github.com/jkomyno"
+        },
+        "lucas": {
+            "name": "Lucas Zeer",
+            "role": "Engineer & Interactive Designer",
+            "image": "https://i.pravatar.cc/150?img=2",
+            "bio": "Lucas Zeer is a versatile engineer and creative technologist with deep expertise in full-stack development, machine learning, and interactive design. With a background in nanotechnology engineering and toy design, he has built everything from digital microfluidic control systems and educational games to machine learning pipelines and IoT-enabled toys. Lucas brings a playful yet rigorous approach to solving technical challenges across education, hardware, and software domains.",
+            "skills": [
+                "Full-Stack Development",
+                "React & Vue",
+                "Interactive Design",
+                "Unity & WebGL",
+                "Machine Learning",
+                "Embedded Systems",
+                "IoT Engineering"
+            ],
+            "linkedin": "https://www.linkedin.com/in/lucas-zeer/",
+            "github": "https://github.com/Lucaszw/"
         }
     }
 }
