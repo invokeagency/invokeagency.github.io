@@ -22,7 +22,7 @@
           <router-link to="/" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Home
           </router-link>
-          <router-link to="/#case-studies" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
+          <router-link to="/stories" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Stories
           </router-link>
           <router-link to="/expertise" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
@@ -46,7 +46,7 @@
           <router-link @click="isMenuOpen = false" to="/" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Home
           </router-link>
-          <router-link @click="isMenuOpen = false" to="/#case-studies" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
+          <router-link @click="isMenuOpen = false" to="/stories" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Stories
           </router-link>
           <router-link @click="isMenuOpen = false" to="/expertise" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
