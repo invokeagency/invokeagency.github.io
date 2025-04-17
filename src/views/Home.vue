@@ -22,7 +22,16 @@
             </span>
           </h1>
           <p class="text-lg sm:text-xl text-white/90 max-w-2xl mb-8 animate-fade-in" style="animation-delay: 200ms;">
-            Your vision, deployed and testable by the weekend. We turn ideas into production-ready applications at unprecedented speed.
+            Your vision, deployed and testable by the weekend. We turn ideas into production-ready applications 
+            <span class="relative inline-block whitespace-nowrap">
+              <span 
+                v-for="(phrase, index) in speedPhrases" 
+                :key="phrase"
+                class="absolute left-0 transition-opacity duration-500"
+                :class="currentPhraseIndex === index ? 'opacity-100' : 'opacity-0'"
+              >... {{ phrase }}</span>
+              <span class="invisible">... before your investors follow up</span>
+            </span>
           </p>
           <div class="animate-slide-up" style="animation-delay: 300ms;">
             <router-link 
@@ -262,15 +271,15 @@
                 <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-40">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2">
-                    <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
+                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10">Absurd Speed, Powered by AI</h3>
                   </div>
                   <p class="text-sm text-invoke-text/80 relative z-10">We use AI to accelerate anything that can be automated - so your product goes live faster than you thought possible.</p>
                 </div>
               </div>
-            </div>
+              </div>
 
             <!-- Step 2 -->
             <div class="absolute top-[150px] left-0 w-[85%]">
@@ -278,15 +287,15 @@
                 <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-30">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2">
-                    <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
+                  </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10">We Don't Rebuild What's Already Solved</h3>
                   </div>
                   <p class="text-sm text-invoke-text/80 relative z-10">Most software is 80% boilerplate. We drop in proven foundations so we can focus on what actually makes your product work.</p>
                 </div>
               </div>
-            </div>
+              </div>
 
             <!-- Step 3 -->
             <div class="absolute top-[325px] right-0 w-[85%]">
@@ -294,15 +303,15 @@
                 <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-20">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2">
-                    <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
+                  </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10">Built by People Who've Shipped Before</h3>
                   </div>
                   <p class="text-sm text-invoke-text/80 relative z-10">You work directly with senior engineers who think like founders - no fluff, no handoffs, no babysitting.</p>
                 </div>
               </div>
-            </div>
+              </div>
 
             <!-- Step 4 -->
             <div class="absolute top-[475px] left-0 w-[85%]">
@@ -310,9 +319,9 @@
                 <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-10">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2">
-                    <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
+                  </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10">Every Feature Tied to a Business Goal</h3>
                   </div>
                   <p class="text-sm text-invoke-text/80 relative z-10">We only build what moves the needle - whether that's traction, revenue, or getting you to the next funding round.</p>
@@ -332,8 +341,8 @@
           <p class="text-lg text-invoke-text/70 max-w-3xl mx-auto">
             Don't just take our word for it - hear from businesses we've helped
           </p>
-        </div>
-        
+          </div>
+
         <div class="relative">
           <!-- Testimonial Carousel -->
           <div class="overflow-hidden">
@@ -354,18 +363,18 @@
                       </svg>
                     </div>
                     
-                    <div class="pl-4 border-l-2 border-invoke-accent/30 mt-4 flex flex-col flex-grow">
-                      <p class="text-invoke-text/70 italic mb-6 line-clamp-4">{{ testimonial.quote }}</p>
-                      <div class="mt-auto flex items-center">
+                    <div class="pl-4 border-l-2 border-invoke-accent/30 mt-4 flex flex-col h-full">
+                      <p class="text-invoke-text/70 italic mb-4 text-sm">{{ testimonial.quote }}</p>
+                      <div class="mt-4 flex items-center">
                         <div class="w-10 h-10 rounded-full bg-invoke-accent/20 overflow-hidden flex items-center justify-center text-invoke-accent">
                           <template v-if="testimonial.image">
                             <img 
                               :src="getTestimonialImage(testimonial.image)" 
                               :alt="testimonial.author"
-                              class="w-full h-full object-cover"
-                              @error="handleImageError"
-                            >
-                          </template>
+                            class="w-full h-full object-cover"
+                            @error="handleImageError"
+                          >
+                        </template>
                           <template v-else>
                             {{ getInitials(testimonial.author) }}
                           </template>
@@ -450,6 +459,14 @@ export default {
   },
   data() {
     return {
+      speedPhrases: [
+        'before your investors follow up',
+        'before your competitors schedule their next meeting',
+        'while others are still writing the brief',
+        'before your co-founder finishes that Notion doc'
+      ],
+      currentPhraseIndex: 0,
+      phraseInterval: null,
       testimonials: testimonialsData.testimonials,
       currentSlide: 0,
       testimonialInterval: null,
@@ -515,14 +532,21 @@ export default {
       this.testimonialInterval = setInterval(() => {
         this.nextSlide()
       }, 8000)
+    },
+    rotatePhrases() {
+      this.currentPhraseIndex = (this.currentPhraseIndex + 1) % this.speedPhrases.length;
     }
   },
   mounted() {
     this.startCarousel()
+    this.phraseInterval = setInterval(this.rotatePhrases, 4000)
   },
   beforeDestroy() {
     if (this.testimonialInterval) {
       clearInterval(this.testimonialInterval)
+    }
+    if (this.phraseInterval) {
+      clearInterval(this.phraseInterval)
     }
   }
 }
