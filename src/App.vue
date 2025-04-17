@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen bg-invoke-bg text-invoke-text">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 py-3 px-6 z-50 bg-invoke-bg/80 backdrop-blur-sm border-b border-invoke-border/10">
+    <nav class="fixed top-0 left-0 right-0 py-3 px-6 z-50 bg-invoke-bg border-b border-invoke-border/10">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <router-link to="/" class="text-2xl font-bold hover:text-invoke-accent transition-colors">
+        <router-link to="/" class="text-2xl font-bold text-invoke-text hover:text-invoke-accent transition-colors">
           INVK<span class="animate-pulse">_</span>
         </router-link>
 
@@ -19,19 +19,19 @@
 
         <!-- Desktop menu -->
         <div class="hidden md:flex items-center space-x-6">
-          <router-link to="/" class="text-sm hover:text-invoke-accent transition-colors">
+          <router-link to="/" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Home
           </router-link>
-          <router-link to="/stories" class="text-sm hover:text-invoke-accent transition-colors">
+          <router-link to="/#case-studies" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Stories
           </router-link>
-          <router-link to="/expertise" class="text-sm hover:text-invoke-accent transition-colors">
+          <router-link to="/expertise" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Expertise
           </router-link>
-          <router-link to="/team" class="text-sm hover:text-invoke-accent transition-colors">
+          <router-link to="/team" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Team
           </router-link>
-          <router-link to="/about" class="text-sm hover:text-invoke-accent transition-colors">
+          <router-link to="/about" class="text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             About
           </router-link>
           <router-link to="/contact" class="text-sm px-4 py-2 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-colors">
@@ -41,21 +41,21 @@
       </div>
 
       <!-- Mobile menu -->
-      <div v-show="isMenuOpen" class="md:hidden absolute top-full left-0 right-0 bg-invoke-bg/95 backdrop-blur-sm border-b border-invoke-border/10">
+      <div v-show="isMenuOpen" class="md:hidden absolute top-full left-0 right-0 bg-invoke-bg border-b border-invoke-border/10">
         <div class="px-4 py-4 space-y-4">
-          <router-link @click="isMenuOpen = false" to="/" class="block text-sm hover:text-invoke-accent transition-colors">
+          <router-link @click="isMenuOpen = false" to="/" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Home
           </router-link>
-          <router-link @click="isMenuOpen = false" to="/stories" class="block text-sm hover:text-invoke-accent transition-colors">
+          <router-link @click="isMenuOpen = false" to="/#case-studies" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Stories
           </router-link>
-          <router-link @click="isMenuOpen = false" to="/expertise" class="block text-sm hover:text-invoke-accent transition-colors">
+          <router-link @click="isMenuOpen = false" to="/expertise" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Expertise
           </router-link>
-          <router-link @click="isMenuOpen = false" to="/team" class="block text-sm hover:text-invoke-accent transition-colors">
+          <router-link @click="isMenuOpen = false" to="/team" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             Team
           </router-link>
-          <router-link @click="isMenuOpen = false" to="/about" class="block text-sm hover:text-invoke-accent transition-colors">
+          <router-link @click="isMenuOpen = false" to="/about" class="block text-sm text-invoke-text/70 hover:text-invoke-accent transition-colors">
             About
           </router-link>
           <router-link @click="isMenuOpen = false" to="/contact" class="block text-sm px-4 py-2 border border-invoke-text/20 rounded-xl hover:border-invoke-accent transition-colors w-full text-center">

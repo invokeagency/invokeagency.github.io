@@ -1,4 +1,4 @@
-<template>
+image.png<template>
   <footer class="border-t border-invoke-text/10 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 mt-8">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -29,11 +29,7 @@
                 Contact
               </router-link>
             </li>
-            <li>
-              <router-link to="/contact?type=careers" class="text-xs sm:text-sm text-invoke-text/60 hover:text-invoke-accent transition-colors">
-                Careers
-              </router-link>
-            </li>
+        
           </ul>
         </div>
 
