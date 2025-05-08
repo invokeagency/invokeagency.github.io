@@ -4,7 +4,7 @@
       <!-- Header -->
       <header class="mb-12 space-y-4">
         <div>
-          <h1 class="text-4xl font-bold">Our Expertise</h1>
+        <h1 class="text-4xl font-bold">Our Expertise</h1>
           <p class="text-xl text-invoke-accent mt-2">Specialized knowledge. Proven results.</p>
         </div>
       </header>

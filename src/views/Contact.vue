@@ -9,7 +9,7 @@
         <input type="hidden" name="_subject" value="New contact from INVOKE website">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" :value="nextUrl">
+        <input type="hidden" name="_next" value="https://invokeagency.dev/#/thanks">
         
         <div class="space-y-4">
           <div>
@@ -89,12 +89,6 @@
 
 <script>
 export default {
-  name: 'Contact',
-  computed: {
-    nextUrl() {
-      // Use absolute URL to ensure redirect works on the custom domain
-      return 'https://invokeagency.dev/#/thanks';
-    }
-  }
+  name: 'Contact'
 }
 </script> 
