@@ -259,67 +259,67 @@
 
         <!-- Right Column - Process Steps -->
         <div class="w-full lg:w-5/12">
-          <div class="relative min-h-[520px]">
+          <div class="relative">
             <!-- Step 1 -->
             <div class="absolute top-[10px] right-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-40 h-[140px]">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-40 h-[150px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
-                  <div class="flex items-center gap-3 mb-2">
-                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                    <h3 class="text-base font-semibold text-invoke-text relative z-10 h-10">Absurd Speed, Powered by AI</h3>
+                  <div class="flex items-center gap-3 mb-2 h-12">
+                    <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">Absurd Speed, Powered by AI</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10">We use AI to accelerate anything that can be automated - so your product goes live faster than you thought possible.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">We use AI to accelerate anything that can be automated - so your product goes live faster than you thought possible.</p>
                 </div>
               </div>
-              </div>
+            </div>
 
             <!-- Step 2 -->
-            <div class="absolute top-[175px] left-0 w-[85%]">
+            <div class="absolute top-[185px] left-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-30 h-[140px]">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-30 h-[150px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
-                  <div class="flex items-center gap-3 mb-2">
-                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                    <h3 class="text-base font-semibold text-invoke-text relative z-10 h-10">We Don't Rebuild What's Already Solved</h3>
+                  <div class="flex items-center gap-3 mb-2 h-12">
+                    <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">We Don't Rebuild What's Already Solved</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10">Most software is 80% boilerplate. We drop in proven foundations so we can focus on what actually makes your product work.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">Most software is 80% boilerplate. We drop in proven foundations so we can focus on what actually makes your product work.</p>
                 </div>
               </div>
-              </div>
+            </div>
 
             <!-- Step 3 -->
-            <div class="absolute top-[340px] right-0 w-[85%]">
+            <div class="absolute top-[360px] right-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-20 h-[140px]">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-20 h-[150px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
-                  <div class="flex items-center gap-3 mb-2">
-                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
-                    <h3 class="text-base font-semibold text-invoke-text relative z-10 h-10">Built by People Who've Shipped Before</h3>
+                  <div class="flex items-center gap-3 mb-2 h-12">
+                    <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">Built by People Who've Shipped Before</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10">You work directly with senior engineers who think like founders - no fluff, no handoffs, no babysitting.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">You work directly with senior engineers who think like founders - no fluff, no handoffs, no babysitting.</p>
                 </div>
               </div>
-              </div>
+            </div>
 
             <!-- Step 4 -->
-            <div class="absolute top-[505px] left-0 w-[85%]">
+            <div class="absolute top-[535px] left-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-10 h-[140px]">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-10 h-[150px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
-                  <div class="flex items-center gap-3 mb-2">
-                  <svg class="w-5 h-5 text-invoke-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                    <h3 class="text-base font-semibold text-invoke-text relative z-10 h-10">Every Feature Tied to a Business Goal</h3>
+                  <div class="flex items-center gap-3 mb-2 h-12">
+                    <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">Every Feature Tied to a Business Goal</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10">We only build what moves the needle - whether that's traction, revenue, or getting you to the next funding round.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">We only build what moves the needle - whether that's traction, revenue, or getting you to the next funding round.</p>
                 </div>
               </div>
             </div>
