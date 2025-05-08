@@ -127,80 +127,12 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <router-link 
+          <StoryCard 
             v-for="story in filteredStories" 
             :key="story.id"
-            :to="{ name: 'story', params: { id: story.id }}"
-            class="group bg-invoke-bg/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-invoke-border/10 hover:border-invoke-accent/30 transition-all duration-300"
-          >
-            <div class="p-8 relative" style="height: 420px;">
-              <!-- Category Badges - Absolute positioned at top -->
-              <div class="absolute top-8 left-8 right-8">
-                <span 
-                  v-for="category in story.categories" 
-                  :key="category"
-                  class="text-xs px-2 py-1 rounded-full bg-invoke-accent/10 text-invoke-accent mr-2 mb-2 inline-block">
-                  {{ categories[category] }}
-                </span>
-              </div>
-
-              <!-- Title - Absolute positioned at fixed distance from top -->
-              <div class="absolute top-[5.5rem] left-8 right-8">
-                <h3 class="text-xl font-semibold group-hover:text-invoke-accent transition-colors line-clamp-2">
-                  {{ story.project }}
-                </h3>
-              </div>
-
-              <!-- Description - Absolute positioned at fixed distance from top -->
-              <div class="absolute top-[10rem] left-8 right-8">
-                <p class="text-sm text-invoke-text/70 line-clamp-2">
-                  {{ story.description }}
-                </p>
-              </div>
-
-              <!-- Metrics - Absolute positioned at fixed distance from top -->
-              <div v-if="story.metrics" class="absolute top-[14rem] left-8 right-8">
-                <div class="grid grid-cols-2 gap-3">
-                  <div v-for="metric in story.metrics.slice(0, 2)" 
-                       :key="metric.label"
-                       :class="story.metrics.length === 1 ? 'col-span-2' : ''"
-                       class="bg-invoke-bg/60 rounded-lg p-2 text-center">
-                    <div class="text-sm font-medium text-invoke-accent">{{ metric.value }}</div>
-                    <div class="text-xs text-invoke-text/60">{{ metric.label }}</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Technologies - Absolute positioned at fixed distance from top -->
-              <div class="absolute top-[20rem] left-8 right-8">
-                <div class="flex flex-wrap gap-2">
-                  <span 
-                    v-for="tech in story.technologies.slice(0, 3)" 
-                    :key="tech"
-                    class="text-xs px-2 py-1 rounded-full bg-invoke-bg/60 text-invoke-text/70 group-hover:bg-invoke-accent/10 group-hover:text-invoke-accent transition-colors"
-                  >
-                    {{ tech }}
-                  </span>
-                  <span v-if="story.technologies.length > 3" 
-                        class="text-xs px-2 py-1 rounded-full bg-invoke-bg/60 text-invoke-text/70 group-hover:bg-invoke-accent/10 group-hover:text-invoke-accent transition-colors">
-                    +{{ story.technologies.length - 3 }} more
-                  </span>
-                </div>
-              </div>
-
-              <!-- Read More - Absolute positioned at bottom -->
-              <div class="absolute bottom-8 left-8 right-8">
-                <div class="flex items-center justify-between">
-                  <span class="text-sm text-invoke-accent group-hover:text-invoke-text transition-colors">
-                    Read full story
-                  </span>
-                  <svg class="w-4 h-4 text-invoke-accent transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </router-link>
+            :story="story"
+            :categoriesData="categories"
+          />
         </div>
         
         <div class="flex justify-center mt-8">
@@ -445,6 +377,7 @@
 
 <script>
 import ProjectTree from '../components/ProjectTree.vue'
+import StoryCard from '../components/StoryCard.vue'
 import testimonialsData from '../data/homepage_testimonials.json'
 import storiesData from '../data/stories.json'
 import ihairumLogo from '../assets/images/client_logos/ihairum_logo.webp'
@@ -453,7 +386,8 @@ import mintseoLogo from '../assets/images/client_logos/mintseo_logo.svg'
 export default {
   name: 'Home',
   components: {
-    ProjectTree
+    ProjectTree,
+    StoryCard
   },
   data() {
     return {
