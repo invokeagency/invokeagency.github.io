@@ -1,0 +1,149 @@
+{
+  "stories": [
+    {
+      "id": "subliminal-meditation",
+      "categories": ["mobile-apps"],
+      "addToProjectTree": true,
+      "priority": 4,
+      "project": "Subliminal Meditation App",
+      "client": "",
+      "metrics": [
+        { "value": "1", "label": "Week from Idea to Launch" }
+      ],
+      "description": "Developed a Flutter-based meditation application delivering personalized subliminal and ambient experiences with AI-generated affirmations",
+      "technologies": ["Flutter", "Dart", "OpenAI"],
+      "challenge": "A wellness company needed a cross-platform meditation app that could create personalized subliminal experiences. They required an intuitive UI for ambient sound mixing, daily AI-generated affirmations, and offline functionality - all while maintaining high performance across iOS and Android devices.",
+      "solution": "We built a Flutter-based application with a sophisticated audio engine that allows users to create custom meditation mixes. The app leverages the OpenAI API to generate unique daily affirmations personalized to each sound theme. We implemented a responsive UI with smooth animations and a robust caching system for offline access to content and previously generated quotes.",
+      "results": [
+        "MVP delivered in 1 week with continuous improvement via CI/CD",
+        "Cross-platform support across iOS, Android, and web",
+        "AI-generated daily affirmations using OpenAI integration",
+        "Seamless audio mixing with the Just Audio library",
+        "Offline mode with intelligent caching of audio and quotes"
+      ],
+      "treeOrder": {
+        "mobile-apps": 1
+      }
+    },
+    {
+      "id": "ai-beauty-analyzer",
+      "categories": ["mobile-apps", "ml-analytics"],
+      "addToProjectTree": true,
+      "priority": 3,
+      "project": "AI Beauty & Health Analysis App",
+      "client": "Beauty Tech Startup",
+      "metrics": [
+        { "value": "2", "label": "Weeks from Concept to MVP" }
+      ],
+      "description": "Engineered a mobile-first AI application that delivers personalized beauty and health analysis using a custom ML pipeline, with LLM-powered product advice, affiliate integration, and science-backed recommendations.",
+      "technologies": [
+        "TypeScript", "Vue", "Ionic", "Capacitor", 
+        "PyTorch", "Neural Networks", "Computer Vision", 
+        "OpenAI", "RAG (Retrieval-Augmented Generation)"
+      ],
+      "challenge": "The client wanted to avoid yet another filter-based beauty app and instead build something real - an AI-powered platform rooted in scientific analysis. It needed to analyze user selfies, provide accurate health and beauty insights, and link each recommendation to meaningful research and monetized product suggestions. All of this had to run smoothly across mobile devices and feel engaging on social platforms.",
+      "solution": "We developed a cross-platform mobile app using Ionic, Capacitor, and Vue. A custom ML pipeline in PyTorch handles face detection, feature extraction, and scoring. The results are fed into a Retrieval-Augmented Generation (RAG) system powered by OpenAI to pair findings with scientifically supported product recommendations and generate a structured report. The app also integrates affiliate links for monetization, delivering both value and revenue from each analysis.",
+      "results": [
+        "Functional AI-powered MVP delivered in just 2 weeks",
+        "Cross-platform support with native performance on iOS, Android, and web",
+        "In-house ML ensemble pipeline for facial feature scoring and health indicators",
+        "RAG + OpenAI system for scientific product matching and personalized report generation",
+        "Affiliate integration for dynamic, monetized skincare and beauty suggestions"
+      ],
+      "treeOrder": {
+        "mobile-apps": 2,
+        "ml-analytics": 3
+      }
+    },
+    {
+      "id": "telegram-chatbot",
+      "categories": ["integrations"],
+      "addToProjectTree": true,
+      "priority": 2,
+      "project": "Telegram Chatbot for B2B Lead Generation",
+      "client": "AI Diagnostics Company",
+      "metrics": [
+        { "value": "Day 1", "label": "Profitable Leads" },
+        { "value": "2", "label": "Weeks to MVP" }
+      ],
+      "description": "Built an end-to-end system for B2B lead generation with referral tracking and CRM integration",
+      "technologies": ["Python", "Telegram API", "FastAPI", "PostgreSQL"],
+      "challenge": "A company with a complex AI-based diagnostics tool wanted to expand their B2B reach. Their goal was to let small businesses onboard easily, allow employees to generate referral codes, and enable end-users to access the diagnostics experience without needing to install an app - all while tracking leads and syncing with their CRM.",
+      "solution": "We built an end-to-end system that includes a user management platform, a Telegram bot replicating the diagnostics experience, and lead detection logic. The system integrates with their ML-powered diagnostics backend and CRM, enabling real-time lead attribution and automated payouts. End-users can access diagnostics, view results, and get updates - all within Telegram.",
+      "results": [
+        "MVP delivered in 2 weeks",
+        "Go-to-market strategy validated within 1 month",
+        "Generated profitable leads from day one of launch",
+        "24/7 diagnostics access - no app install needed",
+        "Lower barrier to adoption in Telegram-heavy markets",
+        "Fully automated, scalable lead generation with transparent attribution"
+      ],
+      "treeOrder": {
+        "integrations": 1
+      }
+    },
+    {
+      "id": "llm-integration",
+      "categories": ["integrations", "ml-analytics"],
+      "addToProjectTree": true,
+      "priority": 5,
+      "project": "LLM Integration SDK",
+      "client": "Enterprise Technology Firm",
+      "metrics": [
+        { "value": "Significant", "label": "Integration Time Reduction" },
+        { "value": "Enhanced", "label": "Security & Auth Handling" }
+      ],
+      "description": "Created a templateable, reusable LLM integration Python SDK for a singular enterprise company and internal use",
+      "technologies": ["Python", "OpenAI API", "FastAPI", "Docker"],
+      "challenge": "An enterprise client needed to integrate LLMs into their existing internal workflows but was struggling with security, authentication handling, and implementation complexity across different teams.",
+      "solution": "We developed a templateable, reusable Python SDK specifically for their internal use that handles authentication, security protocols, and standardized integration patterns.",
+      "results": [
+        "Significant reduction in integration time for internal teams",
+        "Enhanced security and authentication handling",
+        "Standardized LLM implementation across departments",
+        "Simplified internal adoption"
+      ],
+      "treeOrder": {
+        "integrations": 3,
+        "ml-analytics": 3
+      }
+    },
+    {
+      "id": "cybersecurity-platform",
+      "categories": ["ml-analytics", "integrations", "saas"],
+      "addToProjectTree": true,
+      "priority": 1,
+      "project": "AI-Powered Cybersecurity Reporting Platform",
+      "client": "Enterprise Security Firm",
+      "metrics": [
+        { "value": "3", "label": "Weeks from Concept to Production" }
+      ],
+      "description": "Built an automated cybersecurity reporting platform using Azure OpenAI and LLM frameworks to generate structured reports from raw data, with privacy-focused data sanitization and integrations with Jira and Microsoft Sentinel, delivered as a SaaS solution",
+      "technologies": ["Python", "Azure OpenAI", "FastAPI", "Docker", "PostgreSQL", "Redis", "Jira API", "Microsoft Sentinel", "Kubernetes", "Azure", "RAG (Retrieval-Augmented Generation)"],
+      "challenge": "A leading SaaS company wanted to enhance their product chain by offering an automated cybersecurity reporting solution to their enterprise clients. They needed a solution that could produce human-readable, actionable reports while prioritizing data privacy, integrating with their ticketing system, and leveraging threat intelligence from Microsoft Sentinel. We built this feature and integrated it directly into their existing SaaS platform to provide seamless functionality as part of their product offering.",
+      "solution": "We developed a cloud-native SaaS platform in Python that utilizes Azure OpenAI's GPT models and custom LLM frameworks to transform complex security logs and scan results into structured, actionable reports. The system incorporates a sophisticated data sanitization layer that automatically identifies and handles PII/sensitive data according to privacy best practices. We built native integrations with Jira to retrieve relevant tickets in a RAG-like fashion for context, and with Microsoft Sentinel for threat intelligence, creating a seamless workflow from threat detection to comprehensive report generation. The solution was deployed on Azure using Kubernetes for scalability.",
+      "results": [
+        "Significant reduction in manual reporting workload",
+        "GDPR-aligned data sanitization processes",
+        "Seamless integration with Jira for retrieving relevant tickets to provide context in reports",
+        "Microsoft Sentinel integration for enhanced threat context and intelligence",
+        "Custom prompt engineering using Azure OpenAI for cybersecurity-specific reporting",
+        "Automated vulnerability prioritization based on threat intelligence",
+        "End-to-end pipeline from raw security data to executive-ready reports",
+        "SaaS architecture supporting concurrent client reporting",
+        "Subscription-based revenue model with consistent month-over-month growth"
+      ],
+      "treeOrder": {
+        "ml-analytics": 2,
+        "integrations": 2,
+        "saas": 1
+      }
+    }
+  ],
+  "categories": {
+    "integrations": "Integrations & Automation",
+    "mobile-apps": "Mobile Apps",
+    "saas": "SaaS Solutions",
+    "ml-analytics": "ML & Analytics"
+  }
+} 

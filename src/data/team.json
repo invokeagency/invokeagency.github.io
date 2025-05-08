@@ -1,0 +1,103 @@
+{
+    "members": {
+        "frederik": {
+            "name": "Frederik Gram",
+            "role": "Founder & Lead Engineer",
+            "image": "https://i.pravatar.cc/150?img=1",
+            "bio": "Frederik Gram Kortegaard is a versatile software engineer and AI specialist with a strong track record of building scalable systems, intelligent pipelines, and high-performance APIs. With experience spanning cybersecurity, cloud AI engineering, and research-driven deep learning, he combines hands-on engineering with cutting-edge machine learning to solve real-world problems. Frederik founded Invoke to help businesses move faster and smarter by delivering production-ready technology with startup speed and enterprise-grade quality.",
+            "skills": [
+                "Software Architecture & DevOps",
+                "Cloud Engineering (Azure, AWS, GCP)",
+                "LLM Systems & RAG",
+                "MLOps & Model Deployment"
+            ],
+            "linkedin": "https://www.linkedin.com/in/frederikgramkortegaard/",
+            "github": "https://github.com/frederikgramkortegaard"
+        },
+        "iren": {
+            "name": "Iren Glass",
+            "role": "Founder & CMO",
+            "image": "https://i.pravatar.cc/150?img=2",
+            "bio": "Iren is a strategic product development specialist with a talent for building scalable design systems and content frameworks. With experience as Founder at Hypercat and Fractional CMO at iHairium, she's driven user growth of 50,000+ across AI-powered ecosystems. She specializes in transforming product visions into market-ready solutions, creating systems that allow teams to produce high-impact visual content efficiently, and developing brand strategies that resonate with modern audiences.",
+            "skills": [
+                "Product Strategy",
+                "Growth Marketing",
+                "Content Systems",
+                "UX/UI Design",
+                "Brand Development",
+                "AI Product Integration"
+            ],
+            "linkedin": "https://www.linkedin.com/in/irenglass/"
+        },
+        "lasse": {
+            "name": "Lasse Usbeck",
+            "role": "Machine Learning Engineer",
+            "image": "https://i.pravatar.cc/150?img=4",
+            "bio": "Lasse is a machine learning engineer with a strong background in deep learning, neural network optimization, and reinforcement learning. He specializes in building robust, high-performance models for complex tasks, and has contributed to the design of novel architectures and optimization techniques. With a passion for experimental research and hands-on engineering, he bridges the gap between cutting-edge theory and production-grade solutions.",
+            "skills": [
+                "Deep Learning",
+                "Neural Network Architecture",
+                "Optimization Algorithms",
+                "Reinforcement Learning",
+                "Python",
+                "PyTorch",
+                "TensorFlow"
+            ],
+            "linkedin": "https://www.linkedin.com/in/lasseusbeckandresen/",
+            "github": "https://github.com/Bluetitanic"
+        },
+        "anton": {
+            "name": "Anton Kopylov",
+            "role": "Software Engineer",
+            "image": "https://i.pravatar.cc/150?img=5",
+            "bio": "Anton is a highly versatile software engineer with deep experience in DevOps, AI, and cross-platform system development. With a background in mechatronics and microelectronics, he's contributed to AI-driven measurement systems, neural algorithm tooling, and robust infrastructure automation. Whether building low-level C++ systems, optimizing Python workflows, or designing resilient CI/CD pipelines, Anton bridges hardware-aware engineering with modern ML-driven applications.",
+            "skills": [
+                "DevOps",
+                "C++",
+                "Python",
+                "CI/CD",
+                "AI/ML",
+                "Cross-Platform Systems",
+                "System Integration",
+                "Software Optimization"
+            ],
+            "linkedin": "https://www.linkedin.com/in/anton-kopylow/",
+            "github": "https://github.com/antonkopylov"
+        },
+        "alberto": {
+            "name": "Alberto Schiabel",
+            "role": "Senior Software Engineer",
+            "image": "https://i.pravatar.cc/150?img=6",
+            "bio": "Alberto is a senior software engineer and systems thinker with over a decade of experience across full-stack development, systems programming, and scientific computing. With deep expertise in TypeScript, WebAssembly, and functional programming, he builds robust, high-performance software for complex domains. He has consulted for governments, energy optimization initiatives, and fast-scaling startups, and is a long-time open-source contributor to Prisma ORM. Whether it's backend logistics, frontend architecture, or native-level performance with Rust and Wasm, Alberto delivers elegant solutions with expert precision.",
+            "skills": [
+                "TypeScript",
+                "WebAssembly",
+                "Rust",
+                "Functional Programming",
+                "System Architecture",
+                "Open Source Development",
+                "Node.js",
+                "C++"
+            ],
+            "linkedin": "https://www.linkedin.com/in/alberto-schiabel/",
+            "github": "https://github.com/jkomyno"
+        },
+        "lucas": {
+            "name": "Lucas Zeer",
+            "role": "Engineer & Interactive Designer",
+            "image": "https://i.pravatar.cc/150?img=2",
+            "bio": "Lucas Zeer is a versatile engineer and creative technologist with deep expertise in full-stack development, machine learning, and interactive design. With a background in nanotechnology engineering and toy design, he has built everything from digital microfluidic control systems and educational games to machine learning pipelines and IoT-enabled toys. Lucas brings a playful yet rigorous approach to solving technical challenges across education, hardware, and software domains.",
+            "skills": [
+                "Full-Stack Development",
+                "React & Vue",
+                "Interactive Design",
+                "Unity & WebGL",
+                "Machine Learning",
+                "Embedded Systems",
+                "IoT Engineering"
+            ],
+            "linkedin": "https://www.linkedin.com/in/lucas-zeer/",
+            "github": "https://github.com/Lucaszw/"
+        }
+    }
+}
