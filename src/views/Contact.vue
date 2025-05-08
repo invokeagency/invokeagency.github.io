@@ -92,8 +92,8 @@ export default {
   name: 'Contact',
   computed: {
     nextUrl() {
-      // Use absolute URL to ensure redirect works on GitHub Pages
-      return 'https://invokeagency.github.io/#/thanks';
+      // Use absolute URL to ensure redirect works on the custom domain
+      return 'https://invokeagency.dev/#/thanks';
     }
   }
 }
