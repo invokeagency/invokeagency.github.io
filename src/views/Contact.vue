@@ -33,13 +33,13 @@
           </div>
 
           <div>
-            <label class="block text-sm font-medium mb-2">Project Type</label>
+            <label class="block text-sm font-medium mb-2">Inquiry Reason</label>
             <select 
               name="project_type"
               class="w-full px-4 py-2 bg-white/5 border border-invoke-border/30 rounded-lg focus:outline-none focus:border-invoke-accent focus:ring-1 focus:ring-invoke-accent/30 hover:border-invoke-border/50 transition-colors"
               required
             >
-              <option value="">Select a project type</option>
+              <option value="">Select an inquiry reason</option>
               <option value="mvp">MVP Development</option>
               <option value="prototype">Prototype</option>
               <option value="full-product">Full Product</option>

@@ -95,7 +95,7 @@ import antonImage from '../assets/images/team/anton.png'
 import lasseImage from '../assets/images/team/lasse.jpg'
 import lucasImage from '../assets/images/team/lucas.jpg'
 import frederikImage from '../assets/images/team/frederik.png'
-import irenImage from '../assets/images/team/iren.jpg'
+import irenImage from '../assets/images/team/iren.png'
 
 export default {
   name: 'Team',
