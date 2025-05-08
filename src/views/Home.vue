@@ -259,11 +259,11 @@
 
         <!-- Right Column - Process Steps -->
         <div class="w-full lg:w-5/12">
-          <div class="relative">
+          <div class="relative pt-10">
             <!-- Step 1 -->
             <div class="absolute top-[10px] right-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-40 h-[150px] overflow-hidden flex flex-col">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-40 h-[130px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2 h-12">
                     <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -271,15 +271,15 @@
                     </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">Absurd Speed, Powered by AI</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">We use AI to accelerate anything that can be automated - so your product goes live faster than you thought possible.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-2 flex-grow">We use AI to accelerate anything that can be automated - so your product goes live faster than you thought possible.</p>
                 </div>
               </div>
             </div>
 
             <!-- Step 2 -->
-            <div class="absolute top-[185px] left-0 w-[85%]">
+            <div class="absolute top-[165px] left-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-30 h-[150px] overflow-hidden flex flex-col">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-30 h-[130px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2 h-12">
                     <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -287,15 +287,15 @@
                     </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">We Don't Rebuild What's Already Solved</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">Most software is 80% boilerplate. We drop in proven foundations so we can focus on what actually makes your product work.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-2 flex-grow">Most software is 80% boilerplate. We drop in proven foundations so we can focus on what actually makes your product work.</p>
                 </div>
               </div>
             </div>
 
             <!-- Step 3 -->
-            <div class="absolute top-[360px] right-0 w-[85%]">
+            <div class="absolute top-[320px] right-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-20 h-[150px] overflow-hidden flex flex-col">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-20 h-[130px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2 h-12">
                     <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -303,15 +303,15 @@
                     </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">Built by People Who've Shipped Before</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">You work directly with senior engineers who think like founders - no fluff, no handoffs, no babysitting.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-2 flex-grow">You work directly with senior engineers who think like founders - no fluff, no handoffs, no babysitting.</p>
                 </div>
               </div>
             </div>
 
             <!-- Step 4 -->
-            <div class="absolute top-[535px] left-0 w-[85%]">
+            <div class="absolute top-[475px] left-0 w-[85%]">
               <div class="relative">
-                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-10 h-[150px] overflow-hidden flex flex-col">
+                <div class="bg-black/20 backdrop-blur-sm rounded-lg p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/5 hover:border-invoke-accent/20 relative z-10 h-[130px] overflow-hidden flex flex-col">
                   <div class="absolute inset-0 bg-invoke-accent/5 rounded-lg"></div>
                   <div class="flex items-center gap-3 mb-2 h-12">
                     <svg class="w-5 h-5 text-invoke-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -319,7 +319,7 @@
                     </svg>
                     <h3 class="text-base font-semibold text-invoke-text relative z-10 line-clamp-2">Every Feature Tied to a Business Goal</h3>
                   </div>
-                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-3 flex-grow">We only build what moves the needle - whether that's traction, revenue, or getting you to the next funding round.</p>
+                  <p class="text-sm text-invoke-text/80 relative z-10 line-clamp-2 flex-grow">We only build what moves the needle - whether that's traction, revenue, or getting you to the next funding round.</p>
                 </div>
               </div>
             </div>
