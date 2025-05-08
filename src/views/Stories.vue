@@ -46,9 +46,9 @@
           <!-- Background gradient effect -->
           <div class="absolute inset-0 bg-gradient-to-br from-invoke-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           
-          <div class="p-6 relative" style="height: 380px;">
-            <!-- Category Badges - Absolute positioned at top -->
-            <div class="absolute top-6 left-6 right-6">
+          <div class="p-6 flex flex-col h-[380px]">
+            <!-- Category Badges -->
+            <div class="mb-4">
               <span 
                 v-for="category in story.categories" 
                 :key="category"
@@ -57,22 +57,22 @@
               </span>
             </div>
 
-            <!-- Title - Absolute positioned at fixed distance from top -->
-            <div class="absolute top-[4.5rem] left-6 right-6 min-h-[3.5rem]">
+            <!-- Title -->
+            <div class="mb-3">
               <h3 class="text-xl font-semibold group-hover:text-invoke-accent transition-colors line-clamp-2">
                 {{ story.project }}
               </h3>
             </div>
 
-            <!-- Description - Absolute positioned at fixed distance from top -->
-            <div class="absolute top-[8.5rem] left-6 right-6">
+            <!-- Description -->
+            <div class="mb-4">
               <p class="text-sm text-invoke-text/70 line-clamp-2">
                 {{ story.description }}
               </p>
             </div>
 
-            <!-- Metrics - Absolute positioned at fixed distance from top -->
-            <div v-if="story.metrics" class="absolute top-[13rem] left-6 right-6">
+            <!-- Metrics -->
+            <div v-if="story.metrics" class="mb-4">
               <div class="grid grid-cols-2 gap-3">
                 <div v-for="metric in story.metrics.slice(0, 2)" 
                      :key="metric.label"
@@ -84,8 +84,8 @@
               </div>
             </div>
 
-            <!-- Technologies - Absolute positioned at fixed distance from top -->
-            <div class="absolute top-[18rem] left-6 right-6">
+            <!-- Technologies -->
+            <div class="mb-4">
               <div class="flex flex-wrap gap-2 max-h-[80px] overflow-hidden">
                 <span 
                   v-for="tech in story.technologies.slice(0, 3)" 
@@ -101,8 +101,8 @@
               </div>
             </div>
 
-            <!-- Read More - Absolute positioned at bottom -->
-            <div class="absolute bottom-6 left-6 right-6">
+            <!-- Read More - Push to bottom with flexbox -->
+            <div class="mt-auto">
               <div class="flex items-center justify-between bg-invoke-bg/80 backdrop-blur-sm py-2 rounded-lg">
                 <span class="text-sm text-invoke-accent group-hover:text-invoke-text transition-colors px-2">
                   Read full story
