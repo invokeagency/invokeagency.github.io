@@ -20,7 +20,7 @@
     </h3>
 
     <!-- Description -->
-    <p class="text-sm md:text-base text-invoke-text/70 line-clamp-3 flex-grow">
+    <p class="text-sm md:text-base text-invoke-text/70 flex-grow">
       {{ story.description }}
     </p>
 
@@ -90,14 +90,6 @@ export default {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
