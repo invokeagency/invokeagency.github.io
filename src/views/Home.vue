@@ -259,7 +259,7 @@
 
         <!-- Right Column - Process Steps -->
         <div class="w-full lg:w-5/12">
-          <div class="relative pt-10">
+          <div class="relative pt-10 h-[605px]">
             <!-- Step 1 -->
             <div class="absolute top-[10px] right-0 w-[85%]">
               <div class="relative">
@@ -343,15 +343,18 @@
           <div class="overflow-hidden">
             <div 
               class="flex transition-transform duration-500 ease-in-out" 
-              :style="{ transform: `translateX(-${currentSlide * 50}%)` }"
+              :style="{ transform: `translateX(-${currentSlide * (isMobile ? 100 : 50)}%)` }"
             >
               <div 
                 v-for="(testimonial, index) in testimonials" 
                 :key="index"
-                class="w-1/2 flex-shrink-0 px-3 md:px-6"
+                class="flex-shrink-0 px-3 md:px-6 w-full md:w-1/2"
               >
                 <div class="pt-8 px-6">
-                  <div class="bg-invoke-bg/50 shadow-lg p-8 rounded-xl border border-invoke-border/10 relative h-[280px] flex flex-col transition-opacity duration-300 hover:opacity-100" :class="currentSlide === Math.floor(index/2) ? 'opacity-100' : 'opacity-80'">
+                  <div 
+                    class="bg-invoke-bg/50 shadow-lg p-8 rounded-xl border border-invoke-border/10 relative flex flex-col transition-opacity duration-300"
+                    :class="isMobile ? (currentSlide === index ? 'opacity-100' : 'opacity-60') : (currentSlide === Math.floor(index/2) ? 'opacity-100' : 'opacity-60')"
+                  >
                     <div class="absolute -top-8 -left-6 text-invoke-accent" style="z-index: 999;">
                       <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -466,6 +469,7 @@ export default {
       currentSlide: 0,
       testimonialInterval: null,
       imageLoadError: false,
+      isMobile: false,
       clientLogos: [
         ihairumLogo,
         mintseoLogo,
@@ -477,12 +481,13 @@ export default {
   },
   computed: {
     slideCount() {
-      return Math.ceil(this.testimonials.length / 2)
+      if (this.isMobile) {
+        return this.testimonials.length;
+      }
+      return Math.ceil(this.testimonials.length / 2);
     },
     rollerStyle() {
-      // Assuming 1.2em is the height of each phrase item.
-      // This might need to be dynamically calculated or adjusted based on actual font-size and line-height.
-      const itemHeight = 1.2; // in 'em' units for now
+      const itemHeight = 1.2;
       const offset = -this.currentPhraseIndex * itemHeight;
       return {
         transform: `translateY(${offset}em)`
@@ -493,12 +498,11 @@ export default {
         ? this.stories.filter(story => story.categories.includes(this.selectedCategory))
         : this.stories;
       
-      // Sort by priority (lower numbers first)
       return stories.sort((a, b) => {
         const priorityA = a.priority !== undefined ? a.priority : 999;
         const priorityB = b.priority !== undefined ? b.priority : 999;
         return priorityA - priorityB;
-      }).slice(0, 4); // Show only first 4 stories on homepage
+      }).slice(0, 4);
     }
   },
   methods: {
@@ -537,12 +541,22 @@ export default {
     },
     rotatePhrases() {
       this.currentPhraseIndex = (this.currentPhraseIndex + 1) % this.speedPhrases.length;
-      // Logic to update custom roller will go here
+    },
+    checkMobile() {
+      const oldIsMobile = this.isMobile;
+      this.isMobile = window.innerWidth < 768;
+      if (oldIsMobile !== this.isMobile) {
+        if (this.currentSlide >= this.slideCount) {
+          this.currentSlide = Math.max(0, this.slideCount - 1);
+        }
+      }
     }
   },
   mounted() {
     this.startCarousel()
     this.phraseInterval = setInterval(this.rotatePhrases, 4000)
+    this.checkMobile();
+    window.addEventListener('resize', this.checkMobile);
   },
   beforeDestroy() {
     if (this.testimonialInterval) {
@@ -551,6 +565,7 @@ export default {
     if (this.phraseInterval) {
       clearInterval(this.phraseInterval)
     }
+    window.removeEventListener('resize', this.checkMobile);
   }
 }
 </script>
@@ -736,10 +751,10 @@ export default {
 
 .phrase-roller-container {
   display: inline-block;
-  height: 1.2em; /* Adjust based on your line-height / font-size */
-  line-height: 1.2em; /* Match height */
+  height: 1.2em;
+  line-height: 1.2em;
   overflow: hidden;
-  vertical-align: text-bottom; /* Changed from middle to text-bottom */
+  vertical-align: text-bottom;
   position: relative; 
 }
 
@@ -750,7 +765,7 @@ export default {
 
 .phrase-item {
   display: block;
-  height: 1.2em; /* Match container height */
-  line-height: 1.2em; /* Match container line-height */
+  height: 1.2em;
+  line-height: 1.2em;
 }
 </style> 
