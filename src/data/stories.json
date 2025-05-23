@@ -107,37 +107,6 @@
         "integrations": 3,
         "ml-analytics": 3
       }
-    },
-    {
-      "id": "cybersecurity-platform",
-      "categories": ["ml-analytics", "integrations", "saas"],
-      "addToProjectTree": true,
-      "priority": 1,
-      "project": "AI-Powered Cybersecurity Reporting Platform",
-      "client": "Enterprise Security Firm",
-      "metrics": [
-        { "value": "3", "label": "Weeks from Concept to Production" }
-      ],
-      "description": "Built an automated cybersecurity reporting platform using Azure OpenAI and LLM frameworks to generate structured reports from raw data, with privacy-focused data sanitization and integrations with Jira and Microsoft Sentinel, delivered as a SaaS solution",
-      "technologies": ["Python", "Azure OpenAI", "FastAPI", "Docker", "PostgreSQL", "Redis", "Jira API", "Microsoft Sentinel", "Kubernetes", "Azure", "RAG (Retrieval-Augmented Generation)"],
-      "challenge": "A leading SaaS company wanted to enhance their product chain by offering an automated cybersecurity reporting solution to their enterprise clients. They needed a solution that could produce human-readable, actionable reports while prioritizing data privacy, integrating with their ticketing system, and leveraging threat intelligence from Microsoft Sentinel. We built this feature and integrated it directly into their existing SaaS platform to provide seamless functionality as part of their product offering.",
-      "solution": "We developed a cloud-native SaaS platform in Python that utilizes Azure OpenAI's GPT models and custom LLM frameworks to transform complex security logs and scan results into structured, actionable reports. The system incorporates a sophisticated data sanitization layer that automatically identifies and handles PII/sensitive data according to privacy best practices. We built native integrations with Jira to retrieve relevant tickets in a RAG-like fashion for context, and with Microsoft Sentinel for threat intelligence, creating a seamless workflow from threat detection to comprehensive report generation. The solution was deployed on Azure using Kubernetes for scalability.",
-      "results": [
-        "Significant reduction in manual reporting workload",
-        "GDPR-aligned data sanitization processes",
-        "Seamless integration with Jira for retrieving relevant tickets to provide context in reports",
-        "Microsoft Sentinel integration for enhanced threat context and intelligence",
-        "Custom prompt engineering using Azure OpenAI for cybersecurity-specific reporting",
-        "Automated vulnerability prioritization based on threat intelligence",
-        "End-to-end pipeline from raw security data to executive-ready reports",
-        "SaaS architecture supporting concurrent client reporting",
-        "Subscription-based revenue model with consistent month-over-month growth"
-      ],
-      "treeOrder": {
-        "ml-analytics": 2,
-        "integrations": 2,
-        "saas": 1
-      }
     }
   ],
   "categories": {

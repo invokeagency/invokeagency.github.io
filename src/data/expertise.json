@@ -22,7 +22,7 @@
           "expertise": "Experienced in machine learning and signal processing systems"
         }
       ],
-      "stories": ["ai-beauty-analyzer", "llm-integration", "cybersecurity-platform"]
+      "stories": ["ai-beauty-analyzer", "llm-integration"]
     },
     "integrations": {
       "title": "Integrations & Automation",
@@ -42,7 +42,7 @@
           "expertise": "Proficient with lightning-fast TypeScript, WebAssembly, and Prisma ORM integrations"
         }
       ],
-      "stories": ["telegram-chatbot", "llm-integration", "cybersecurity-platform"]
+      "stories": ["telegram-chatbot", "llm-integration"]
     },
     "mobile-apps": {
       "title": "Mobile Apps",
@@ -86,7 +86,7 @@
           "expertise": "Experienced with multi-tenant SaaS platforms and serverless architecture"
         }
       ],
-      "stories": ["cybersecurity-platform"]
+      "stories": []
     }
   }
 } 
