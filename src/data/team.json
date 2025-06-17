@@ -3,7 +3,7 @@
         "frederik": {
             "name": "Frederik Gram",
             "role": "Founder & Lead Engineer",
-            "image": "https://i.pravatar.cc/150?img=1",
+            "image": "./assets/images/team/profile.png",
             "bio": "Frederik Gram Kortegaard is a versatile software engineer and AI specialist with a strong track record of building scalable systems, intelligent pipelines, and high-performance APIs. With experience spanning cybersecurity, cloud AI engineering, and research-driven deep learning, he combines hands-on engineering with cutting-edge machine learning to solve real-world problems. Frederik founded Invoke to help businesses move faster and smarter by delivering production-ready technology with startup speed and enterprise-grade quality.",
             "skills": [
                 "Software Architecture & DevOps",
