@@ -6,7 +6,7 @@
       "addToProjectTree": true,
       "priority": 4,
       "project": "Subliminal Meditation App",
-      "client": "",
+      "client": "App Marketing Company",
       "metrics": [
         { "value": "1", "label": "Week from Idea to Launch" }
       ],
@@ -26,10 +26,34 @@
       }
     },
     {
+      "id": "ihairium-shopify-app",
+      "categories": ["integrations"],
+      "addToProjectTree": true,
+      "priority": 3,
+      "project": "Shopify AI Diagnostics App for Personalized Haircare",
+      "client": "AI Diagnostics Company",
+      "metrics": [
+        { "value": "3", "label": "Days from Contract to Deployment" }
+      ],
+      "description": "Built a Shopify app and theme extension that seamlessly integrates AI-powered hair and scalp diagnostics into e-commerce storefronts",
+      "technologies": ["Shopify", "Remix", "JavaScript", "API Integration", "Theme Extensions"],
+      "challenge": "An AI-powered hair and scalp diagnostics company with 60,000+ B2C users set out to expand into the B2B space. The goal: help e-commerce haircare brands increase customer trust, product relevance, and conversion rates by offering clinically informed diagnostics. They needed a seamless way to let merchants integrate their AI system - without requiring technical expertise from the B2B client.",
+      "solution": "We built a Shopify app and theme extension that acts as a seamless bridge to their B2B diagnostics API. Merchants can effortlessly add interactive diagnostics, photo uploads, and personalized results to their storefront - all styled to match their brand. The integration delivers real-time diagnostic results without requiring custom development or technical expertise from merchants.",
+      "results": [
+        "Successfully launched on Shopify App Store with native theme integration",
+        "Seamless onboarding - install, paste API key, go live",
+        "Dynamically configurable styling for diagnostics results, diagnostics modal, and CTAs - no technical expertise required from merchants",
+        "Reduced cart abandonment rate, boosted AOV and retention with informed product matching"
+      ],
+      "treeOrder": {
+        "integrations": 2
+      }
+    },
+    {
       "id": "ai-beauty-analyzer",
       "categories": ["mobile-apps", "ml-analytics"],
       "addToProjectTree": true,
-      "priority": 3,
+      "priority": 4,
       "project": "AI Beauty & Health Analysis App",
       "client": "Beauty Tech Startup",
       "metrics": [

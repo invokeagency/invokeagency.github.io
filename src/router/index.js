@@ -68,12 +68,7 @@ const router = createRouter({
     if (savedPosition) {
       return savedPosition;
     } else {
-      // Wait slightly longer than the transition duration (300ms)
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve({ top: 0, behavior: 'smooth' }); // Optional: add smooth scroll
-        }, 350); // Delay slightly longer than transition
-      });
+      return { top: 0 };
     }
   }
 })

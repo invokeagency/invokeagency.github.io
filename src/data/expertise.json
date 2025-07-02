@@ -42,7 +42,7 @@
           "expertise": "Proficient with lightning-fast TypeScript, WebAssembly, and Prisma ORM integrations"
         }
       ],
-      "stories": ["telegram-chatbot", "llm-integration"]
+      "stories": ["telegram-chatbot", "ihairium-shopify-app"]
     },
     "mobile-apps": {
       "title": "Mobile Apps",
